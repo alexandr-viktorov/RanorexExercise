@@ -1,0 +1,87 @@
+﻿<repository
+id="2dbdd3c9-6e24-4d10-bd3d-1fd27a029574"
+name="Ranorex_exerciseRepository">
+	<codegen
+	classname="Ranorex_exerciseRepository"
+	namespace="Ranorex_exercise">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="6a3ff6d0-3c9c-4c5a-9f3e-8bdfe058f992"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="form,nativewindow,wpfcorewin32element,wpfcoreelement"
+		capname="form"
+		id="d4a9e1a4-201f-4ee0-b861-7125b6ef7b1d"
+		isrooted="True"
+		name="MarkAttelerikdomainComMyApplication"
+		refimgid="4efce742-9c3b-4929-a34d-352487813380"
+		refpath="/form[@automationid='']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<folder
+			capname="unknown"
+			id="cd22b4e7-03b9-4077-933a-c9c8183d2a68"
+			isrooted="False"
+			name="MailPanel"
+			searchtimeout="0ms">
+				<item
+				addcaps="text,wpfcoreelement"
+				capname="text"
+				id="597360ac-95e3-455f-915e-a9ae1aa3e7e1"
+				name="treeitem_InboxFolder"
+				refimgid="080ba702-2861-4502-bfe0-04bbeaaab8b9"
+				refpath="/form[@automationid='']/container[1]/tabpagelist[@automationid='OutlookBar']/button[@automationid='MinimizedContentElement']/tree/treeitem[1]/container[@automationid='ItemsHost']/treeitem[1]/container[@automationid='HeaderContentPanel']/container[@automationid='Header']/text[@caption='Inbox']"
+				robustPath="/form[@automationid='']//text[@caption='Inbox']"
+				searchtimeout="30000ms">
+					/form[@automationid='']/?/?/tabpagelist[@automationid='OutlookBar']/button[@automationid='MinimizedContentElement']//container[@automationid='ItemsHost']/?/?/container[@automationid='HeaderContentPanel']/?/?/text[@caption='Inbox']
+				</item>
+			</folder>
+			<folder
+			capname="unknown"
+			id="a1e8f1de-cfa6-491d-9c24-4cb1a520884e"
+			isrooted="False"
+			name="MailListPanel"
+			searchtimeout="0ms">
+				<item
+				capname="unknown"
+				id="16429395-00d4-4453-b2c8-85f98de3194b"
+				name="NewItem"
+				robustPath="/form[@automationid='']/element"
+				searchtimeout="30000ms">
+					/form[@automationid='']/element
+				</item>
+				<item
+				addcaps="text,wpfcoreelement"
+				capname="text"
+				id="4d370a18-c221-49da-8de6-1ec9e14e6488"
+				name="input_SearchMail"
+				refimgid="ef99c29c-e8f6-47bf-b527-90dcf5201a87"
+				refpath="/form[@automationid='']/container[1]/tabpagelist[@automationid='OutlookBar']/container[@automationid='MainSectorTemplate']/text/text[@caption='']"
+				robustPath="/form[@automationid='']//text[@automationid='SearchWatermarkTextBox']/text[@caption='']"
+				searchtimeout="30000ms">
+					/form[@automationid='']/?/?/tabpagelist[@automationid='OutlookBar']/container[@automationid='MainSectorTemplate']/text/text[@caption='']
+				</item>
+			</folder>
+			<basepath>
+				/form[@automationid='']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAEfSURBVDhPnZCxagJBEIYPn0kb0ykm6BNY+Co2
+IlgljU0qGwlCwJDDQqwEUS4JCSSFnQom0Uja2Hm7k/snzjEavRj/ZdidXf5vZ8bRoiO0tv4IF6lU
++uCIBETpTwB0UjylykuVbLC05D0ScP58SXE3y6EhYoJ+AYJzDBf4WcwJN8d7sny2YYY2AMEes9YO
+q8MaZdp56n3c0cqsyFhL3ucTZTsFKj1e7K4giNCM33qLe364nrSoPmryGRBpR4whQJsRvvXpbTkP
+8+nXO1ciubSjAZ4A0LOxhk1ieF3OuB3JUYUWz0BD+osHfmiMb+lqdMPn7nwQmn1jPDZtSyAYGCCo
+BD9joBhspFmkK9FxkFm0DfmXWSSQo8wiQBDrdI8c5xtljThGJ77RNQAAAABJRU5ErkJggg==
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
+</repository>

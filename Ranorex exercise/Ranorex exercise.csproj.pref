@@ -1,0 +1,17 @@
+﻿<Properties>
+  <Array name="active">
+    <Element value="Recording1.rxrec" />
+  </Array>
+  <Array name="bookmarks" />
+  <Array name="files">
+    <Element value="Ranorex_exercise.rxtst" />
+    <Element value="Recording1.rxrec" />
+    <Element value="StartAUT.rxrec" />
+    <Element value="Ranorex_exerciseRepository.rxrep" />
+    <Element value="Ranorex_exercise.rxtmg" />
+    <Element value="Recording1.cs" />
+  </Array>
+  <Properties name="projectSavedData">
+    <Array name="recentusercodeselections" />
+  </Properties>
+</Properties>

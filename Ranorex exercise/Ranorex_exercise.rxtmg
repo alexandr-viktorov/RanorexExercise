@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc
+rxversion="10.2">
+	<testsuiteentryhierarchy>
+		<flatlistofchildren>
+			<modulegroupdef
+			id="5e996348-4ed3-47ea-aa09-cf4d7e8cc459"
+			name="ModuleGroup">
+			</modulegroupdef>
+			<modulegroups
+			id="fa47a0ea-fd41-4812-8928-ffe5eaedc59b"
+			name="Ranorex_exercise">
+			</modulegroups>
+		</flatlistofchildren>
+		<childhierarchy>
+			<modulegroups
+			id="fa47a0ea-fd41-4812-8928-ffe5eaedc59b"
+			name="Ranorex_exercise">
+				<modulegroupdef
+				id="5e996348-4ed3-47ea-aa09-cf4d7e8cc459"
+				name="ModuleGroup">
+				</modulegroupdef>
+			</modulegroups>
+		</childhierarchy>
+	</testsuiteentryhierarchy>
+</modulegroupdoc>
