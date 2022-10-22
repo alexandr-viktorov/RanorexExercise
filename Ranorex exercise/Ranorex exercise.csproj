@@ -125,6 +125,18 @@
     <Compile Include="AssemblyInfo.cs">
       <id>eab0df91-41f0-4d55-a8f4-ea692fd3fac3</id>
     </Compile>
+    <Compile Include="CheckEmailInSendFolder.cs">
+      <BoundTo>890218b7-de8e-461c-9f7f-2dccd7be7745</BoundTo>
+      <DependentUpon>CheckEmailInSendFolder.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d56962a0-e91a-4bb2-95b8-f33ff9f93823</id>
+    </Compile>
+    <Compile Include="CheckEmailInSendFolder.UserCode.cs">
+      <BoundTo>890218b7-de8e-461c-9f7f-2dccd7be7745</BoundTo>
+      <DependentUpon>CheckEmailInSendFolder.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ee6c6828-fce1-40ef-8e52-1e3e9cd2ed10</id>
+    </Compile>
     <Compile Include="CloseAUT.cs">
       <BoundTo>a4f7b1fe-ce1b-4b98-9f2a-fd00da8f3a20</BoundTo>
       <DependentUpon>CloseAUT.rxrec</DependentUpon>
@@ -146,17 +158,17 @@
       <RepositoryCode>true</RepositoryCode>
       <id>574c31c7-2b2b-4c84-a303-9cdb1ffbde34</id>
     </Compile>
-    <Compile Include="Recording1.cs">
-      <BoundTo>ace309c0-a407-4d71-b7a1-e730e21f5eff</BoundTo>
-      <DependentUpon>Recording1.rxrec</DependentUpon>
+    <Compile Include="ReplyOnMail.cs">
+      <BoundTo>c0798546-55d6-494d-9cf3-628f9113a588</BoundTo>
+      <DependentUpon>ReplyOnMail.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
-      <id>4eca754b-9ebc-4671-9617-5812f23b349b</id>
+      <id>c918df6f-8c1a-48a4-9f75-d79e58b5a003</id>
     </Compile>
-    <Compile Include="Recording1.UserCode.cs">
-      <BoundTo>ace309c0-a407-4d71-b7a1-e730e21f5eff</BoundTo>
-      <DependentUpon>Recording1.rxrec</DependentUpon>
+    <Compile Include="ReplyOnMail.UserCode.cs">
+      <BoundTo>c0798546-55d6-494d-9cf3-628f9113a588</BoundTo>
+      <DependentUpon>ReplyOnMail.rxrec</DependentUpon>
       <UserCode>true</UserCode>
-      <id>de6f041b-91ff-4c31-b92d-ef274fc8b5d2</id>
+      <id>63c93e04-374f-41a9-b333-0fbee378f0ed</id>
     </Compile>
     <Compile Include="StartAUT.cs">
       <BoundTo>cc8d12a4-531f-480f-a76b-e8c1b5dfbd71</BoundTo>
@@ -175,6 +187,11 @@
     <None Include="app.config">
       <id>73b18422-ff00-44ba-8b26-7f12e8eebb4a</id>
     </None>
+    <None Include="CheckEmailInSendFolder.rxrec">
+      <BoundTo>429deec9-fd71-4fa2-a554-4ead09176a36</BoundTo>
+      <id>890218b7-de8e-461c-9f7f-2dccd7be7745</id>
+      <recordtableid>2953d67a-7769-41a7-8158-388af813a75e</recordtableid>
+    </None>
     <None Include="CloseAUT.rxrec">
       <BoundTo>429deec9-fd71-4fa2-a554-4ead09176a36</BoundTo>
       <id>a4f7b1fe-ce1b-4b98-9f2a-fd00da8f3a20</id>
@@ -191,10 +208,10 @@
       <repoid>2dbdd3c9-6e24-4d10-bd3d-1fd27a029574</repoid>
       <reporootid>6a3ff6d0-3c9c-4c5a-9f3e-8bdfe058f992</reporootid>
     </None>
-    <None Include="Recording1.rxrec">
+    <None Include="ReplyOnMail.rxrec">
       <BoundTo>429deec9-fd71-4fa2-a554-4ead09176a36</BoundTo>
-      <id>ace309c0-a407-4d71-b7a1-e730e21f5eff</id>
-      <recordtableid>b63c03b5-8538-451d-9828-4bf051e7cb9e</recordtableid>
+      <id>c0798546-55d6-494d-9cf3-628f9113a588</id>
+      <recordtableid>715a4290-40cd-46fc-be8f-f8a13835546e</recordtableid>
     </None>
     <None Include="StartAUT.rxrec">
       <BoundTo>429deec9-fd71-4fa2-a554-4ead09176a36</BoundTo>

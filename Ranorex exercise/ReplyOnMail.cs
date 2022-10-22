@@ -24,29 +24,29 @@ namespace Ranorex_exercise
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Recording1 recording.
+    ///The ReplyOnMail recording.
     /// </summary>
-    [TestModule("b63c03b5-8538-451d-9828-4bf051e7cb9e", ModuleType.Recording, 1)]
-    public partial class Recording1 : ITestModule
+    [TestModule("715a4290-40cd-46fc-be8f-f8a13835546e", ModuleType.Recording, 1)]
+    public partial class ReplyOnMail : ITestModule
     {
         /// <summary>
         /// Holds an instance of the Ranorex_exerciseRepository repository.
         /// </summary>
         public static Ranorex_exerciseRepository repo = Ranorex_exerciseRepository.Instance;
 
-        static Recording1 instance = new Recording1();
+        static ReplyOnMail instance = new ReplyOnMail();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Recording1()
+        public ReplyOnMail()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Recording1 Instance
+        public static ReplyOnMail Instance
         {
             get { return instance; }
         }
@@ -85,6 +85,26 @@ namespace Ranorex_exercise
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MarkAttelerikdomainComMyApplication.MailListPanel.input_SearchMail' at 286;10.", repo.MarkAttelerikdomainComMyApplication.MailListPanel.input_SearchMailInfo, new RecordItemIndex(1));
             repo.MarkAttelerikdomainComMyApplication.MailListPanel.input_SearchMail.Click("286;10");
+            Delay.Milliseconds(2170);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'How can i' with focus on 'MarkAttelerikdomainComMyApplication.MailListPanel.input_SearchMail'.", repo.MarkAttelerikdomainComMyApplication.MailListPanel.input_SearchMailInfo, new RecordItemIndex(2));
+            repo.MarkAttelerikdomainComMyApplication.MailListPanel.input_SearchMail.PressKeys("How can i");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MarkAttelerikdomainComMyApplication.MailListPanel.HowCanIImplementFiletringBehavior' at 36;33.", repo.MarkAttelerikdomainComMyApplication.MailListPanel.HowCanIImplementFiletringBehaviorInfo, new RecordItemIndex(3));
+            repo.MarkAttelerikdomainComMyApplication.MailListPanel.HowCanIImplementFiletringBehavior.Click("36;33");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='In all versions of Telerik controls released in 2013 the ability to implement custom FilteringBehavior for RadAutoCompleteBox is available') on item 'MarkAttelerikdomainComMyApplication.ViewEditMailPanel.SomeText1'.", repo.MarkAttelerikdomainComMyApplication.ViewEditMailPanel.SomeText1Info, new RecordItemIndex(4));
+            Validate.AttributeEqual(repo.MarkAttelerikdomainComMyApplication.ViewEditMailPanel.SomeText1Info, "Text", "In all versions of Telerik controls released in 2013 the ability to implement custom FilteringBehavior for RadAutoCompleteBox is available");
+            Delay.Milliseconds(100);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MarkAttelerikdomainComMyApplication.HomeTab.button_Reply' at 11;9.", repo.MarkAttelerikdomainComMyApplication.HomeTab.button_ReplyInfo, new RecordItemIndex(5));
+            repo.MarkAttelerikdomainComMyApplication.HomeTab.button_Reply.Click("11;9");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MarkAttelerikdomainComMyApplication.NewEmail.button_Send' at 16;23.", repo.MarkAttelerikdomainComMyApplication.NewEmail.button_SendInfo, new RecordItemIndex(6));
+            repo.MarkAttelerikdomainComMyApplication.NewEmail.button_Send.Click("16;23");
             Delay.Milliseconds(0);
             
         }

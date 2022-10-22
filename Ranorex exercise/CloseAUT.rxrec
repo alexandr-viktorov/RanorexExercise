@@ -33,7 +33,7 @@ mode="Desktop">
 		<closeapprecorditem
 		enabled="True"
 		graceperiod="500ms"
-		method="CloseWindowByProcessID"
+		method="CloseWindow"
 		optional="False"
 		searchpropertyid="44c2b1c1-d59f-438c-804e-78e7c673f9c0">
 			<comment>
@@ -44,6 +44,15 @@ mode="Desktop">
 				variable="CloseAutProcessIDVar">
 				</binding>
 			</bindings>
+			<info
+			id="d4a9e1a4-201f-4ee0-b861-7125b6ef7b1d"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@automationid='']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
 		</closeapprecorditem>
 	</recorditems>
 	<repository

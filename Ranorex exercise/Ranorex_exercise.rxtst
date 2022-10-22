@@ -6,16 +6,16 @@
 			id="28047239-cf56-47e4-b87e-38c76cdc6728"
 			name="setup">
 			</setup>
+			<testmodule
+			id="40795690-888e-4b6c-9fbc-b2c6b264e1be"
+			name="CheckEmailInSendFolder"
+			ref="2953d67a-7769-41a7-8158-388af813a75e"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="5d1135fb-e92d-47f0-a830-e3112026b0bb"
 			name="TestCase">
 			</testcase>
-			<testmodule
-			id="647d7d4f-e669-44c6-901c-5db0f2f7816e"
-			name="Recording1"
-			ref="b63c03b5-8538-451d-9828-4bf051e7cb9e"
-			type="Recording">
-			</testmodule>
 			<testmodule
 			id="afd9eabd-d541-4424-b5ce-b24352f50d4e"
 			name="CloseAUT"
@@ -58,6 +58,12 @@
 			reportwriteinterval="30000ms"
 			singlereportpdfdirectory="SingleReportPDF">
 			</testsuite>
+			<testmodule
+			id="d56378cc-bd7a-4171-b3bb-d2eb428e1f09"
+			name="ReplyOnMail"
+			ref="715a4290-40cd-46fc-be8f-f8a13835546e"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="da6efb69-6a48-486b-a865-3da06f08ef3e"
 			name="StartAUT"
@@ -103,8 +109,12 @@
 							</testmodule>
 						</setup>
 						<testmodule
-						id="647d7d4f-e669-44c6-901c-5db0f2f7816e"
-						name="Recording1">
+						id="d56378cc-bd7a-4171-b3bb-d2eb428e1f09"
+						name="ReplyOnMail">
+						</testmodule>
+						<testmodule
+						id="40795690-888e-4b6c-9fbc-b2c6b264e1be"
+						name="CheckEmailInSendFolder">
 						</testmodule>
 						<teardown
 						id="be9058e6-6a4c-4e2e-a532-6fdd2084af24"

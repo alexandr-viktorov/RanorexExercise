@@ -18,16 +18,56 @@ name="Ranorex_exerciseRepository">
 		id="d4a9e1a4-201f-4ee0-b861-7125b6ef7b1d"
 		isrooted="True"
 		name="MarkAttelerikdomainComMyApplication"
-		refimgid="4efce742-9c3b-4929-a34d-352487813380"
+		refimgid="7853ecd2-7fbd-4433-bf3d-2213751d946f"
 		refpath="/form[@automationid='']"
 		searchtimeout="30000ms"
 		usecache="True">
+			<folder
+			capname="unknown"
+			id="b1705d94-cd10-4685-aaaa-002c89350b0e"
+			isrooted="False"
+			name="NewEmail"
+			searchtimeout="0ms">
+				<item
+				addcaps="button,wpfcoreelement"
+				capname="button"
+				id="68aad5b7-6204-4f5a-8f2d-bb845849a800"
+				name="button_Send"
+				refimgid="0a9cadfd-16f5-48a6-8983-933c1a09d1f4"
+				refpath="/form[@automationid='']/container[1]/tabpagelist[@automationid='OutlookBar']/container[@automationid='MainSectorTemplate']/container[2]/container[2]/button"
+				robustPath="/form[@automationid='']//container[@automationid='MainSectorTemplate']/container[2]/container[2]/button"
+				searchtimeout="30000ms">
+					/form[@automationid='']/?/?/tabpagelist[@automationid='OutlookBar']/container[@automationid='MainSectorTemplate']/container[2]/container[2]/button
+				</item>
+				<item
+				addcaps="button,wpfcoreelement"
+				capname="button"
+				id="d62efb63-5778-4bed-b7c2-a8c26a9e7995"
+				name="Reply"
+				refimgid="4927484a-eda2-476c-a434-08e1140fdc20"
+				refpath="/form[@automationid='']/container[1]/tabpagelist[@automationid='OutlookBar']/container[@automationid='MainSectorTemplate']/container[2]/container[1]/container[1]/button[@text='Reply']"
+				robustPath="/form[@automationid='']//container[@automationid='MainSectorTemplate']/container[2]/container[1]/container[1]/button[@text='Reply']"
+				searchtimeout="30000ms">
+					/form[@automationid='']/container[1]/tabpagelist[@automationid='OutlookBar']/container[@automationid='MainSectorTemplate']//button[@text='Reply']
+				</item>
+			</folder>
 			<folder
 			capname="unknown"
 			id="cd22b4e7-03b9-4077-933a-c9c8183d2a68"
 			isrooted="False"
 			name="MailPanel"
 			searchtimeout="0ms">
+				<item
+				addcaps="text,wpfcoreelement"
+				capname="text"
+				id="b9917e8f-be83-447d-b73a-1a97fb0065de"
+				name="treeitem_SendFolder"
+				refimgid="ef50cc8c-1e77-4fe7-b2e2-ea43829e7c75"
+				refpath="/form[@automationid='']/container[1]/tabpagelist[@automationid='OutlookBar']/button[@automationid='MinimizedContentElement']/tree/treeitem[1]/container[@automationid='ItemsHost']/treeitem[2]/container[@automationid='HeaderContentPanel']/container[@automationid='Header']/text[@caption='Sent Items']"
+				robustPath="/form[@automationid='']//text[@caption='Sent Items']"
+				searchtimeout="30000ms">
+					/form[@automationid='']/?/?/tabpagelist[@automationid='OutlookBar']/button[@automationid='MinimizedContentElement']//container[@automationid='ItemsHost']/treeitem[2]/container[@automationid='HeaderContentPanel']/?/?/text[@caption='Sent Items']
+				</item>
 				<item
 				addcaps="text,wpfcoreelement"
 				capname="text"
@@ -47,14 +87,6 @@ name="Ranorex_exerciseRepository">
 			name="MailListPanel"
 			searchtimeout="0ms">
 				<item
-				capname="unknown"
-				id="16429395-00d4-4453-b2c8-85f98de3194b"
-				name="NewItem"
-				robustPath="/form[@automationid='']/element"
-				searchtimeout="30000ms">
-					/form[@automationid='']/element
-				</item>
-				<item
 				addcaps="text,wpfcoreelement"
 				capname="text"
 				id="4d370a18-c221-49da-8de6-1ec9e14e6488"
@@ -64,6 +96,73 @@ name="Ranorex_exerciseRepository">
 				robustPath="/form[@automationid='']//text[@automationid='SearchWatermarkTextBox']/text[@caption='']"
 				searchtimeout="30000ms">
 					/form[@automationid='']/?/?/tabpagelist[@automationid='OutlookBar']/container[@automationid='MainSectorTemplate']/text/text[@caption='']
+				</item>
+				<item
+				addcaps="cell,wpfcoreelement"
+				capname="cell"
+				id="66a918c2-dbd2-4981-a0b0-862189f9fccc"
+				name="HowCanIImplementFiletringBehavior"
+				refimgid="e7d0d4d3-1ee4-4033-9629-912eb3ece4ab"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@automationid='']//table[@automationid='gridView']/container[@automationid='PART_ItemsScrollViewer']/container[@automationid='PART_GridViewVirtualizingPanel']/?/list[@automationid='PART_DataCellsPresenter']/cell[@text&gt;'How can I']
+				</item>
+				<item
+				addcaps="cell,wpfcoreelement"
+				capname="cell"
+				id="6d598557-f76d-4996-8cec-08ec9e6511ab"
+				name="HowToAddPerpendicularLineInTelerik"
+				refimgid="0e24ddda-b476-4531-bcbe-b6bb5287f374"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@automationid='']//table[@automationid='gridView']/container[@automationid='PART_ItemsScrollViewer']/container[@automationid='PART_GridViewVirtualizingPanel']/?/?/cell[@text&gt;'How to Add']
+				</item>
+			</folder>
+			<folder
+			capname="unknown"
+			id="43d81f59-f818-4376-8dc9-2378fad0723d"
+			isrooted="False"
+			name="HomeTab"
+			searchtimeout="0ms">
+				<item
+				addcaps="button,wpfcoreelement"
+				capname="button"
+				id="a2854dda-c5f0-435e-baec-83e17d6b0447"
+				name="button_Reply"
+				refimgid="cc548f76-825b-43e9-93e0-8d67ed9c5733"
+				refpath="/form[@automationid='']/container[1]/tabpagelist[@automationid='richTextBoxRibbonUI']/tabpage[@title='Home']/button[@automationid='CollapsedButton' and @name='CollapsedButton' and @text='Respond']/container[@caption='']/button[@text='Reply']"
+				robustPath="/form[@automationid='']//button[@text='Reply']"
+				searchtimeout="30000ms">
+					/form[@automationid='']//tabpage[@title='Home']/button[@name='CollapsedButton' and @text='Respond']/?/?/button[@text='Reply']
+				</item>
+			</folder>
+			<folder
+			capname="unknown"
+			id="6a09847e-f0a5-489e-9d21-e9c23718594a"
+			isrooted="False"
+			name="ViewEditMailPanel"
+			searchtimeout="0ms">
+				<item
+				addcaps="text,wpfcoreelement"
+				capname="text"
+				id="cc91bb28-e964-4ae4-aa25-fd112a2ccdbb"
+				name="SomeText1"
+				refimgid="b266503c-1c3f-416e-99ff-66be8add762b"
+				refpath="/form[@automationid='']/container[1]/tabpagelist[@automationid='OutlookBar']/container[@automationid='MainSectorTemplate']/container[2]/container[@automationid='editableRichTextBox']/container[@automationid='ViewPresenter']/container[@automationid='LinesDocumentLayer']/text[4]"
+				robustPath="/form[@automationid='']//container[@automationid='LinesDocumentLayer']/text[4]"
+				searchtimeout="30000ms">
+					/form[@automationid='']//container[@automationid='MainSectorTemplate']/?/?/container[@automationid='editableRichTextBox']/container[@automationid='ViewPresenter']/container[@automationid='LinesDocumentLayer']/text[4]
+				</item>
+				<item
+				addcaps="text,wpfcoreelement"
+				capname="text"
+				id="e47fa634-0f17-4693-baef-0cc70f17a181"
+				name="SomeText"
+				refimgid="b730b460-ae35-4e67-a18a-5fc5baa67f2a"
+				refpath="/form[@automationid='']/container[1]/tabpagelist[@automationid='OutlookBar']/container[@automationid='MainSectorTemplate']/container[2]/container[@automationid='editableRichTextBox']/container[@automationid='ViewPresenter']/container[@automationid='LinesDocumentLayer']/text[2]"
+				robustPath="/form[@automationid='']//container[@automationid='LinesDocumentLayer']/text[2]"
+				searchtimeout="30000ms">
+					/form[@automationid='']//container[@automationid='MainSectorTemplate']/?/?/container[@automationid='editableRichTextBox']/container[@automationid='ViewPresenter']/container[@automationid='LinesDocumentLayer']/text[2]
 				</item>
 			</folder>
 			<basepath>

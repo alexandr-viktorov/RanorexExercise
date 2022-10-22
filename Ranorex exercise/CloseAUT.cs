@@ -92,8 +92,8 @@ namespace Ranorex_exercise
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application with Process ID bound to variable $CloseAutProcessIDVar.", new RecordItemIndex(0));
-            Host.Current.CloseApplication(int.Parse(CloseAutProcessIDVar), 500);
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'MarkAttelerikdomainComMyApplication'.", repo.MarkAttelerikdomainComMyApplication.SelfInfo, new RecordItemIndex(0));
+            Host.Current.CloseApplication(repo.MarkAttelerikdomainComMyApplication.Self, 500);
             Delay.Milliseconds(0);
             
         }
