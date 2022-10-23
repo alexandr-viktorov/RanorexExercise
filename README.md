@@ -7,7 +7,7 @@ To run this test suite need to perform following steps
 2.	Download WPF application from 
 https://demos.telerik.com/wpf/outlookinspiredapp/?_ga=2.143035004.870410431.1583315977-2074839806.1583315977
 Unzip it and put it in a convenient location (by default it's user desktop).
-3.	Start Ranorex  Studio and open ìRanorex exercise.rxslnî
+3.	Start Ranorex  Studio and open ‚ÄúRanorex exercise.rxsln‚Äù
 
 # Test suite scenarios
 Two test scenarios were implemented:
@@ -39,6 +39,6 @@ Two test scenarios were implemented:
 11. Repeat steps 3-10 for few emails (test data provided by Data source according to selection in data range, 4 rows)
 12. Close application.
 
-#Please note
+# Please note
 For current setup the test 'Reply On Email' is failed cause on third iteration the error message comes up:
     "Please make sure you enter at least one correct recipient address."
