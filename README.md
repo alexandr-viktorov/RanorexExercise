@@ -9,8 +9,9 @@ https://demos.telerik.com/wpf/outlookinspiredapp/?_ga=2.143035004.870410431.1583
 Unzip it and put it in a convenient location (by default it's user desktop).
 3.	Start Ranorex  Studio and open “Ranorex exercise.rxsln”
 
-# Test suite scenarios 
-There two scenarios are implemented:
+# Test suite scenarios
+Two test scenarios were implemented:
+
 -- Reply On Email
 1. Start application.
 2. Click on Inbox folder
