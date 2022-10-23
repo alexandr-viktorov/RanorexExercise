@@ -42,7 +42,7 @@ mode="Desktop">
 				</binding>
 			</bindings>
 			<filename>
-				c:\Users\alv\Desktop\Telerik OutlookInspiredApp for WPF.appref-ms&#32;
+				%UserProfile%\Desktop\Telerik OutlookInspiredApp for WPF.appref-ms&#32;
 			</filename>
 			<args>
 			</args>

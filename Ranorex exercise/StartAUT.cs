@@ -92,8 +92,8 @@ namespace Ranorex_exercise
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run application 'c:\\Users\\alv\\Desktop\\Telerik OutlookInspiredApp for WPF.appref-ms ' in normal mode. Return value bound to $StartAutProcessIDVar.", new RecordItemIndex(0));
-            StartAutProcessIDVar = ValueConverter.ToString(Host.Local.RunApplication("c:\\Users\\alv\\Desktop\\Telerik OutlookInspiredApp for WPF.appref-ms ", "", "", false));
+            Report.Log(ReportLevel.Info, "Application", "Run application '%UserProfile%\\Desktop\\Telerik OutlookInspiredApp for WPF.appref-ms ' in normal mode. Return value bound to $StartAutProcessIDVar.", new RecordItemIndex(0));
+            StartAutProcessIDVar = ValueConverter.ToString(Host.Local.RunApplication("%UserProfile%\\Desktop\\Telerik OutlookInspiredApp for WPF.appref-ms ", "", "", false));
             Delay.Milliseconds(0);
             
         }

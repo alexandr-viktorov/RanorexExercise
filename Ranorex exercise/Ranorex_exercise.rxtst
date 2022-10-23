@@ -164,10 +164,10 @@
 			</testmodule>
 			<smartfoldernode
 			datarangeactive="True"
-			datarangeset="1,2"
+			datarangeset="1,2,3,4"
 			datasource="ForwardEmailsConnector"
 			id="ab9ef480-aeae-4cea-9fd4-c81c2b09e4b4"
-			maxrange="1"
+			maxrange="3"
 			minrange="0"
 			name="Forward_Email">
 			</smartfoldernode>
@@ -519,6 +519,12 @@
 		name="TestRun">
 			<testcontainer
 			id="538b77bf-4c15-4cc8-b48e-c2222c3dd593">
+			</testcontainer>
+			<testcontainer
+			id="5d1135fb-e92d-47f0-a830-e3112026b0bb">
+			</testcontainer>
+			<testcontainer
+			id="6d073437-3c14-4947-b19c-e6b3d44d88c8">
 			</testcontainer>
 			<testcontainer
 			id="ab9ef480-aeae-4cea-9fd4-c81c2b09e4b4">
