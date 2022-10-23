@@ -42,7 +42,6 @@ namespace Ranorex_exercise
         public Search_Email_By_Subject()
         {
             SearchValue = "How can i";
-            Subject = "How can i";
         }
 
         /// <summary>
@@ -65,18 +64,6 @@ namespace Ranorex_exercise
         {
             get { return _SearchValue; }
             set { _SearchValue = value; }
-        }
-
-        string _Subject;
-
-        /// <summary>
-        /// Gets or sets the value of variable Subject.
-        /// </summary>
-        [TestVariable("892882ed-5a73-485b-acd8-bcce1ae6df80")]
-        public string Subject
-        {
-            get { return _Subject; }
-            set { _Subject = value; }
         }
 
 #endregion

@@ -7,6 +7,14 @@
 			name="Search_Email_By_Subject"
 			ref="9fcae4e3-c7a8-41a7-a52d-6de136ead007"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="SearchValue"
+					datasourceid="46bb6a07-ed82-4a32-bf36-a0bf23699d36"
+					variableid="efc2416b-3cfd-4f0f-bb18-7293134d9a9d"
+					variablename="SearchValue">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="0de3fc6a-8c7e-45f7-9b4d-0d50332e3fde"
@@ -19,6 +27,14 @@
 			name="Type_Message"
 			ref="b5cea646-1641-4c87-b66e-eb69e40f250a"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="MessageText"
+					datasourceid="138ac565-255f-4564-af0f-d21afcb2bff1"
+					variableid="f85ea9b0-6b75-4907-9f65-e122f678f823"
+					variablename="MessageText">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="1a8c81b3-e326-4917-81bd-8d8ac49143b3"
@@ -83,7 +99,11 @@
 			name="Reply_on_Emails">
 			</testcase>
 			<smartfoldernode
+			datarangeactive="True"
+			datasource="RepplyConnector"
 			id="6d073437-3c14-4947-b19c-e6b3d44d88c8"
+			maxrange="5"
+			minrange="3"
 			name="Reply_On_Email">
 			</smartfoldernode>
 			<testmodule
@@ -91,16 +111,37 @@
 			name="Type_Message"
 			ref="b5cea646-1641-4c87-b66e-eb69e40f250a"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="MessageText"
+					datasourceid="46bb6a07-ed82-4a32-bf36-a0bf23699d36"
+					variableid="f85ea9b0-6b75-4907-9f65-e122f678f823"
+					variablename="MessageText">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="8d390d22-7409-485a-89af-752534f55430"
 			name="Open_Email_By_Click_On_Subject"
 			ref="87244cb1-15b2-4bdc-8bbe-5e9be14c367d"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="SearchValue"
+					datasourceid="46bb6a07-ed82-4a32-bf36-a0bf23699d36"
+					variableid="f93a521c-909a-4520-a23b-7c85ad22bf2a"
+					variablename="EmaillSubject">
+					</var>
+				</databinding>
 			</testmodule>
 			<smartfoldernode
+			datarangeactive="True"
+			datarangeset="1,2"
+			datasource="ForwardEmailsConnector"
 			id="ab9ef480-aeae-4cea-9fd4-c81c2b09e4b4"
-			name="Reply_On_Email">
+			maxrange="1"
+			minrange="0"
+			name="Forward_Email">
 			</smartfoldernode>
 			<testmodule
 			id="afd9eabd-d541-4424-b5ce-b24352f50d4e"
@@ -121,6 +162,14 @@
 			name="Search_Email_By_Subject"
 			ref="9fcae4e3-c7a8-41a7-a52d-6de136ead007"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="SearchValue"
+					datasourceid="138ac565-255f-4564-af0f-d21afcb2bff1"
+					variableid="efc2416b-3cfd-4f0f-bb18-7293134d9a9d"
+					variablename="SearchValue">
+					</var>
+				</databinding>
 			</testmodule>
 			<teardown
 			id="be9058e6-6a4c-4e2e-a532-6fdd2084af24"
@@ -169,12 +218,28 @@
 			name="Open_Email_By_Click_On_Subject"
 			ref="87244cb1-15b2-4bdc-8bbe-5e9be14c367d"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="SearchValue"
+					datasourceid="138ac565-255f-4564-af0f-d21afcb2bff1"
+					variableid="f93a521c-909a-4520-a23b-7c85ad22bf2a"
+					variablename="EmaillSubject">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="eac59d7f-bd06-41ab-b73c-9d7b8086851b"
 			name="Set_To_Address"
 			ref="bee505d7-41a4-42cb-9bb8-810b91a836b1"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="ToAddress"
+					datasourceid="46bb6a07-ed82-4a32-bf36-a0bf23699d36"
+					variableid="d6c6b83d-502e-4f78-9eee-5e70d406a89d"
+					variablename="ToAddress">
+					</var>
+				</databinding>
 			</testmodule>
 			<setup
 			id="ecbfc81f-c499-4d98-92e6-fbc401cdaa44"
@@ -292,7 +357,7 @@
 						</testmodule>
 						<smartfoldernode
 						id="ab9ef480-aeae-4cea-9fd4-c81c2b09e4b4"
-						name="Reply_On_Email">
+						name="Forward_Email">
 							<testmodule
 							id="0c28a5d0-46cf-4ca1-a12d-43b364a17425"
 							name="Search_Email_By_Subject">
@@ -336,22 +401,91 @@
 		</childhierarchy>
 	</testsuiteentryhierarchy>
 	<datasources>
+		<DataSource
+		id="46bb6a07-ed82-4a32-bf36-a0bf23699d36"
+		includefile="Checked"
+		lastknownrowcount="6"
+		name="ForwardEmailsConnector"
+		type="Ranorex.Core.Data.CsvDataConnector"
+		withheaders="True">
+			<lastknowncolumns>
+				<column>
+					SearchValue
+				</column>
+				<column>
+					ControlValue
+				</column>
+				<column>
+					ToAddress
+				</column>
+				<column>
+					MessageText
+				</column>
+			</lastknowncolumns>
+			<maskedcolumns>
+				<columnname>
+					ControlValue
+				</columnname>
+				<columnname>
+					MessageText
+				</columnname>
+				<columnname>
+					SearchValue
+				</columnname>
+				<columnname>
+					ToAddress
+				</columnname>
+			</maskedcolumns>
+			<file>
+				TestDataSourceForForward.csv
+			</file>
+		</DataSource>
+		<DataSource
+		id="138ac565-255f-4564-af0f-d21afcb2bff1"
+		includefile="Checked"
+		lastknownrowcount="6"
+		name="RepplyConnector"
+		type="Ranorex.Core.Data.CsvDataConnector"
+		withheaders="True">
+			<lastknowncolumns>
+				<column>
+					SearchValue
+				</column>
+				<column>
+					ControlValue
+				</column>
+				<column>
+					ToAddress
+				</column>
+				<column>
+					MessageText
+				</column>
+			</lastknowncolumns>
+			<maskedcolumns>
+				<columnname>
+					ControlValue
+				</columnname>
+				<columnname>
+					MessageText
+				</columnname>
+				<columnname>
+					SearchValue
+				</columnname>
+			</maskedcolumns>
+			<file>
+				TestDataSourceForReply.csv
+			</file>
+		</DataSource>
 	</datasources>
 	<testconfigurations
 	default="TestRun">
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="538b77bf-4c15-4cc8-b48e-c2222c3dd593">
-			</testcontainer>
-			<testcontainer
 			id="5d1135fb-e92d-47f0-a830-e3112026b0bb">
 			</testcontainer>
 			<testcontainer
 			id="6d073437-3c14-4947-b19c-e6b3d44d88c8">
-			</testcontainer>
-			<testcontainer
-			id="ab9ef480-aeae-4cea-9fd4-c81c2b09e4b4">
 			</testcontainer>
 			<testcontainer
 			id="f87fb669-0d3f-43e2-968f-dbcea5115cd2">

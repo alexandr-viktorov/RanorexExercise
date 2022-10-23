@@ -378,6 +378,20 @@
       <id>cc8d12a4-531f-480f-a76b-e8c1b5dfbd71</id>
       <recordtableid>79414303-681d-4920-976e-e39e0e900603</recordtableid>
     </None>
+    <Content Include="TestDataSourceForForward.csv">
+      <Link>TestDataSourceForForward.csv</Link>
+      <BoundTo>9ac6f437-b218-4e47-8a67-c6b52bdc228e</BoundTo>
+      <DependentUpon>Ranorex_exercise.rxtst</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>ac5cbb0e-9420-4116-a2a1-2d8b7cedc27c</id>
+    </Content>
+    <Content Include="TestDataSourceForReply.csv">
+      <Link>TestDataSourceForReply.csv</Link>
+      <BoundTo>9ac6f437-b218-4e47-8a67-c6b52bdc228e</BoundTo>
+      <DependentUpon>Ranorex_exercise.rxtst</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>5a3d6992-3461-4ecf-8501-2ff667605c6a</id>
+    </Content>
     <None Include="Type_Message.rxrec">
       <BoundTo>429deec9-fd71-4fa2-a554-4ead09176a36</BoundTo>
       <id>672ac9a1-8641-46d2-b663-3ef6d7ee0f5b</id>
