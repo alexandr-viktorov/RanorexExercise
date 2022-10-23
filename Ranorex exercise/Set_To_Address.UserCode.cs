@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace Ranorex_exercise
 {
-    public partial class Click_Button_Reply
+    public partial class Set_To_Address
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

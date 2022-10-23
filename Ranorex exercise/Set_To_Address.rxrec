@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="bd025c79-8c14-4d48-8489-f04ade388445"
+id="bee505d7-41a4-42cb-9bb8-810b91a836b1"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,10 +19,15 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Click_Button_Reply"
+	classname="Set_To_Address"
 	namespace="Ranorex_exercise">
 	</codegen>
 	<variables>
+		<var
+		id="d6c6b83d-502e-4f78-9eee-5e70d406a89d"
+		name="ToAddress">
+			test.email@test.test
+		</var>
 	</variables>
 	<recorditems>
 		<mouseitem
@@ -33,7 +38,7 @@ mode="Global">
 		loc="Center"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="7874dde3-f431-4b20-a6d9-8c775ae32d12"
+		searchpropertyid="cffccfc2-1182-4177-8f38-c57439b3b783"
 		sx="0"
 		sy="0"
 		warnoutofbounds="False">
@@ -42,15 +47,40 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="a2854dda-c5f0-435e-baec-83e17d6b0447"
+			id="c0ea88f2-9ebd-4027-9e38-b204b1754bb2"
 			sourcename="ItemRecorderEditor">
 				<path>
-					/form[@automationid='']//tabpage[@title='Home']/button[@name='CollapsedButton' and @text='Respond']/?/?/button[@text='Reply']
+					/form[@automationid='']/container[@caption='']/tabpagelist[@automationid='OutlookBar']/container[@automationid='MainSectorTemplate']//text[@caption='To...']/following-sibling::text/text[@caption=''][1]
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
 		</mouseitem>
+		<keysequenceitem
+		KeySequence=""
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		searchpropertyid="1fd05c59-a1f0-47d1-8f08-a63c5c04b2f7">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="KeySequence"
+				variable="ToAddress">
+				</binding>
+			</bindings>
+			<info
+			id="c0ea88f2-9ebd-4027-9e38-b204b1754bb2"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@automationid='']/container[@caption='']/tabpagelist[@automationid='OutlookBar']/container[@automationid='MainSectorTemplate']//text[@caption='To...']/following-sibling::text/text[@caption=''][1]
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</keysequenceitem>
 	</recorditems>
 	<repository
 	id="2dbdd3c9-6e24-4d10-bd3d-1fd27a029574"
@@ -67,7 +97,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Click_Button_Reply.UserCode.cs
+		Set_To_Address.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

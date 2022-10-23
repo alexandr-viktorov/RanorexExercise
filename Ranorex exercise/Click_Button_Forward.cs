@@ -24,29 +24,29 @@ namespace Ranorex_exercise
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Click_Button_Reply recording.
+    ///The Click_Button_Forward recording.
     /// </summary>
-    [TestModule("bd025c79-8c14-4d48-8489-f04ade388445", ModuleType.Recording, 1)]
-    public partial class Click_Button_Reply : ITestModule
+    [TestModule("63fb368c-24b0-4f8d-b069-1660675a1c18", ModuleType.Recording, 1)]
+    public partial class Click_Button_Forward : ITestModule
     {
         /// <summary>
         /// Holds an instance of the Ranorex_exerciseRepository repository.
         /// </summary>
         public static Ranorex_exerciseRepository repo = Ranorex_exerciseRepository.Instance;
 
-        static Click_Button_Reply instance = new Click_Button_Reply();
+        static Click_Button_Forward instance = new Click_Button_Forward();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Click_Button_Reply()
+        public Click_Button_Forward()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Click_Button_Reply Instance
+        public static Click_Button_Forward Instance
         {
             get { return instance; }
         }
@@ -79,8 +79,8 @@ namespace Ranorex_exercise
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MarkAttelerikdomainComMyApplication.HomeTab.button_Reply' at Center.", repo.MarkAttelerikdomainComMyApplication.HomeTab.button_ReplyInfo, new RecordItemIndex(0));
-            repo.MarkAttelerikdomainComMyApplication.HomeTab.button_Reply.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MarkAttelerikdomainComMyApplication.HomeTab.button_Forward' at Center.", repo.MarkAttelerikdomainComMyApplication.HomeTab.button_ForwardInfo, new RecordItemIndex(0));
+            repo.MarkAttelerikdomainComMyApplication.HomeTab.button_Forward.Click();
             Delay.Milliseconds(0);
             
         }

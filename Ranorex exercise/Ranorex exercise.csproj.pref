@@ -1,13 +1,13 @@
 ﻿<Properties>
   <Array name="active">
-    <Element value="StartAUT.rxrec" />
+    <Element value="Ranorex_exercise.rxtst" />
   </Array>
   <Array name="bookmarks" />
   <Array name="files">
     <Element value="Ranorex_exercise.rxtst" />
-    <Element value="StartAUT.rxrec" />
-    <Element value="Ranorex_exerciseRepository.rxrep" />
-    <Element value="Ranorex_exercise.rxtmg" />
+    <Element value="Click_Button_Send.rxrec" />
+    <Element value="Search_Email_By_Subject.rxrec" />
+    <Element value="Open_Email_By_Click_On_Subject.rxrec" />
   </Array>
   <Properties name="projectSavedData">
     <Array name="recentusercodeselections" />

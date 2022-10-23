@@ -3,10 +3,42 @@
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
 			<testmodule
+			id="0c28a5d0-46cf-4ca1-a12d-43b364a17425"
+			name="Search_Email_By_Subject"
+			ref="9fcae4e3-c7a8-41a7-a52d-6de136ead007"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="0de3fc6a-8c7e-45f7-9b4d-0d50332e3fde"
 			name="Navigate_To_Inbox_Folder"
 			ref="d059b543-c8e2-4be6-9f68-a9918eca1d81"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="12b8f253-c423-40ec-b43a-3c774e71a470"
+			name="Type_Message"
+			ref="b5cea646-1641-4c87-b66e-eb69e40f250a"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="1a8c81b3-e326-4917-81bd-8d8ac49143b3"
+			name="Click_Button_Reply"
+			ref="bd025c79-8c14-4d48-8489-f04ade388445"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="2747fbd6-b265-44d3-9dd8-35a34cbd0af4"
+			name="CloseAUT"
+			ref="9d3a7a06-d746-4e4f-ad87-59ae3ae16041"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="AppProcessID"
+					datasourceid="f87fb669-0d3f-43e2-968f-dbcea5115cd2"
+					variableid="319a82fa-5e7a-41ad-943d-6cb7033ae0f5"
+					variablename="CloseAutProcessIDVar">
+					</var>
+				</databinding>
 			</testmodule>
 			<setup
 			id="28047239-cf56-47e4-b87e-38c76cdc6728"
@@ -18,12 +50,56 @@
 			ref="a5429b83-ec66-49ab-b58d-aa4f0bf0fd35"
 			type="Recording">
 			</testmodule>
+			<testmodule
+			id="485d026b-96e7-4f4a-989f-7a14bbb0e2f7"
+			name="Search_Clear_Input_Field"
+			ref="e19f70af-18bc-4a34-a15e-7d5bb980b32e"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="4d15056d-a94a-4942-81aa-271393060c0d"
+			name="StartAUT"
+			ref="79414303-681d-4920-976e-e39e0e900603"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="AppProcessID"
+					datasourceid="f87fb669-0d3f-43e2-968f-dbcea5115cd2"
+					variableid="f20d8cf7-8c31-4a61-8a7f-fb964eab0102"
+					variablename="StartAutProcessIDVar">
+					</var>
+				</databinding>
+			</testmodule>
+			<testcase
+			id="538b77bf-4c15-4cc8-b48e-c2222c3dd593"
+			name="Forward_Emails">
+			</testcase>
+			<teardown
+			id="58505905-cce3-479f-b8dc-7c49e03eee8a"
+			name="teardown">
+			</teardown>
 			<testcase
 			id="5d1135fb-e92d-47f0-a830-e3112026b0bb"
 			name="Reply_on_Emails">
 			</testcase>
 			<smartfoldernode
 			id="6d073437-3c14-4947-b19c-e6b3d44d88c8"
+			name="Reply_On_Email">
+			</smartfoldernode>
+			<testmodule
+			id="8ae34aa1-1b5a-4e79-90f1-e76a91002a5f"
+			name="Type_Message"
+			ref="b5cea646-1641-4c87-b66e-eb69e40f250a"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="8d390d22-7409-485a-89af-752534f55430"
+			name="Open_Email_By_Click_On_Subject"
+			ref="87244cb1-15b2-4bdc-8bbe-5e9be14c367d"
+			type="Recording">
+			</testmodule>
+			<smartfoldernode
+			id="ab9ef480-aeae-4cea-9fd4-c81c2b09e4b4"
 			name="Reply_On_Email">
 			</smartfoldernode>
 			<testmodule
@@ -75,12 +151,6 @@
 			singlereportpdfdirectory="SingleReportPDF">
 			</testsuite>
 			<testmodule
-			id="d56378cc-bd7a-4171-b3bb-d2eb428e1f09"
-			name="Click_button_Reply"
-			ref="715a4290-40cd-46fc-be8f-f8a13835546e"
-			type="Recording">
-			</testmodule>
-			<testmodule
 			id="da6efb69-6a48-486b-a865-3da06f08ef3e"
 			name="StartAUT"
 			ref="79414303-681d-4920-976e-e39e0e900603"
@@ -100,6 +170,28 @@
 			ref="87244cb1-15b2-4bdc-8bbe-5e9be14c367d"
 			type="Recording">
 			</testmodule>
+			<testmodule
+			id="eac59d7f-bd06-41ab-b73c-9d7b8086851b"
+			name="Set_To_Address"
+			ref="bee505d7-41a4-42cb-9bb8-810b91a836b1"
+			type="Recording">
+			</testmodule>
+			<setup
+			id="ecbfc81f-c499-4d98-92e6-fbc401cdaa44"
+			name="setup">
+			</setup>
+			<testmodule
+			id="f1f581f8-4bc2-4164-98fc-ccba30fcc50c"
+			name="Navigate_To_Inbox_Folder"
+			ref="d059b543-c8e2-4be6-9f68-a9918eca1d81"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="f412c6ee-55cd-4b7a-9621-95d21046c88e"
+			name="Click_Button_Send"
+			ref="a5429b83-ec66-49ab-b58d-aa4f0bf0fd35"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="f87fb669-0d3f-43e2-968f-dbcea5115cd2"
 			name="Ranorex_exercise"
@@ -111,6 +203,18 @@
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="f8a4e601-c11d-4b43-810f-514ea265de10"
+			name="Search_Clear_Input_Field"
+			ref="e19f70af-18bc-4a34-a15e-7d5bb980b32e"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="f8c8df3a-dc87-4d11-a570-ce0a6b39c073"
+			name="Click_Button_Forward"
+			ref="63fb368c-24b0-4f8d-b069-1660675a1c18"
+			type="Recording">
+			</testmodule>
 		</flatlistofchildren>
 		<childhierarchy>
 			<testsuite
@@ -146,12 +250,20 @@
 							name="Open_Email_By_Click_On_Subject">
 							</testmodule>
 							<testmodule
-							id="d56378cc-bd7a-4171-b3bb-d2eb428e1f09"
-							name="Click_button_Reply">
+							id="1a8c81b3-e326-4917-81bd-8d8ac49143b3"
+							name="Click_Button_Reply">
+							</testmodule>
+							<testmodule
+							id="12b8f253-c423-40ec-b43a-3c774e71a470"
+							name="Type_Message">
 							</testmodule>
 							<testmodule
 							id="2de7f667-b0b2-4ea0-a5ba-dfb1f1f161da"
 							name="Click_Button_Send">
+							</testmodule>
+							<testmodule
+							id="f8a4e601-c11d-4b43-810f-514ea265de10"
+							name="Search_Clear_Input_Field">
 							</testmodule>
 						</smartfoldernode>
 						<teardown
@@ -159,6 +271,62 @@
 						name="teardown">
 							<testmodule
 							id="afd9eabd-d541-4424-b5ce-b24352f50d4e"
+							name="CloseAUT">
+							</testmodule>
+						</teardown>
+					</testcase>
+					<testcase
+					id="538b77bf-4c15-4cc8-b48e-c2222c3dd593"
+					name="Forward_Emails">
+						<setup
+						id="ecbfc81f-c499-4d98-92e6-fbc401cdaa44"
+						name="setup">
+							<testmodule
+							id="4d15056d-a94a-4942-81aa-271393060c0d"
+							name="StartAUT">
+							</testmodule>
+						</setup>
+						<testmodule
+						id="f1f581f8-4bc2-4164-98fc-ccba30fcc50c"
+						name="Navigate_To_Inbox_Folder">
+						</testmodule>
+						<smartfoldernode
+						id="ab9ef480-aeae-4cea-9fd4-c81c2b09e4b4"
+						name="Reply_On_Email">
+							<testmodule
+							id="0c28a5d0-46cf-4ca1-a12d-43b364a17425"
+							name="Search_Email_By_Subject">
+							</testmodule>
+							<testmodule
+							id="8d390d22-7409-485a-89af-752534f55430"
+							name="Open_Email_By_Click_On_Subject">
+							</testmodule>
+							<testmodule
+							id="f8c8df3a-dc87-4d11-a570-ce0a6b39c073"
+							name="Click_Button_Forward">
+							</testmodule>
+							<testmodule
+							id="eac59d7f-bd06-41ab-b73c-9d7b8086851b"
+							name="Set_To_Address">
+							</testmodule>
+							<testmodule
+							id="8ae34aa1-1b5a-4e79-90f1-e76a91002a5f"
+							name="Type_Message">
+							</testmodule>
+							<testmodule
+							id="f412c6ee-55cd-4b7a-9621-95d21046c88e"
+							name="Click_Button_Send">
+							</testmodule>
+							<testmodule
+							id="485d026b-96e7-4f4a-989f-7a14bbb0e2f7"
+							name="Search_Clear_Input_Field">
+							</testmodule>
+						</smartfoldernode>
+						<teardown
+						id="58505905-cce3-479f-b8dc-7c49e03eee8a"
+						name="teardown">
+							<testmodule
+							id="2747fbd6-b265-44d3-9dd8-35a34cbd0af4"
 							name="CloseAUT">
 							</testmodule>
 						</teardown>
@@ -174,10 +342,16 @@
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
+			id="538b77bf-4c15-4cc8-b48e-c2222c3dd593">
+			</testcontainer>
+			<testcontainer
 			id="5d1135fb-e92d-47f0-a830-e3112026b0bb">
 			</testcontainer>
 			<testcontainer
 			id="6d073437-3c14-4947-b19c-e6b3d44d88c8">
+			</testcontainer>
+			<testcontainer
+			id="ab9ef480-aeae-4cea-9fd4-c81c2b09e4b4">
 			</testcontainer>
 			<testcontainer
 			id="f87fb669-0d3f-43e2-968f-dbcea5115cd2">

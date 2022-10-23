@@ -459,6 +459,7 @@ namespace Ranorex_exercise
         public partial class HomeTabFolder : RepoGenBaseFolder
         {
             RepoItemInfo _button_replyInfo;
+            RepoItemInfo _button_forwardInfo;
 
             /// <summary>
             /// Creates a new HomeTab  folder.
@@ -467,6 +468,7 @@ namespace Ranorex_exercise
                     base("HomeTab", "", parentFolder, 0, null, false, "43d81f59-f818-4376-8dc9-2378fad0723d", "")
             {
                 _button_replyInfo = new RepoItemInfo(this, "button_Reply", ".//tabpage[@title='Home']/button[@name='CollapsedButton' and @text='Respond']/?/?/button[@text='Reply']", ".//button[@text='Reply']", 30000, null, "a2854dda-c5f0-435e-baec-83e17d6b0447");
+                _button_forwardInfo = new RepoItemInfo(this, "button_Forward", ".//tabpage[@title='Home']/button[@name='CollapsedButton' and @text='Respond']/?/?/button[@text='Forward']", ".//button[@text='Forward']", 30000, null, "0c253750-0583-474c-a03d-e2c10313709d");
             }
 
             /// <summary>
@@ -504,6 +506,30 @@ namespace Ranorex_exercise
                     return _button_replyInfo;
                 }
             }
+
+            /// <summary>
+            /// The button_Forward item.
+            /// </summary>
+            [RepositoryItem("0c253750-0583-474c-a03d-e2c10313709d")]
+            public virtual Ranorex.Button button_Forward
+            {
+                get
+                {
+                    return _button_forwardInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The button_Forward item info.
+            /// </summary>
+            [RepositoryItemInfo("0c253750-0583-474c-a03d-e2c10313709d")]
+            public virtual RepoItemInfo button_ForwardInfo
+            {
+                get
+                {
+                    return _button_forwardInfo;
+                }
+            }
         }
 
         /// <summary>
@@ -514,6 +540,8 @@ namespace Ranorex_exercise
         {
             RepoItemInfo _sometext1Info;
             RepoItemInfo _sometextInfo;
+            RepoItemInfo _input_toInfo;
+            RepoItemInfo _edit_messageboxInfo;
 
             /// <summary>
             /// Creates a new ViewEditMailPanel  folder.
@@ -523,6 +551,8 @@ namespace Ranorex_exercise
             {
                 _sometext1Info = new RepoItemInfo(this, "SomeText1", ".//container[@automationid='MainSectorTemplate']/?/?/container[@automationid='editableRichTextBox']/container[@automationid='ViewPresenter']/container[@automationid='LinesDocumentLayer']/text[4]", ".//container[@automationid='LinesDocumentLayer']/text[4]", 30000, null, "cc91bb28-e964-4ae4-aa25-fd112a2ccdbb");
                 _sometextInfo = new RepoItemInfo(this, "SomeText", ".//container[@automationid='MainSectorTemplate']/?/?/container[@automationid='editableRichTextBox']/container[@automationid='ViewPresenter']/container[@automationid='LinesDocumentLayer']/text[2]", ".//container[@automationid='LinesDocumentLayer']/text[2]", 30000, null, "e47fa634-0f17-4693-baef-0cc70f17a181");
+                _input_toInfo = new RepoItemInfo(this, "input_To", "container[@caption='']/tabpagelist[@automationid='OutlookBar']/container[@automationid='MainSectorTemplate']//text[@caption='To...']/following-sibling::text/text[@caption=''][1]", "", 30000, null, "c0ea88f2-9ebd-4027-9e38-b204b1754bb2");
+                _edit_messageboxInfo = new RepoItemInfo(this, "edit_MessageBox", "container[@caption='']/?/?/container[@automationid='MainSectorTemplate']/?/?/container[@automationid='editableRichTextBox']", ".//container[@automationid='LinesDocumentLayer']/text[17]", 30000, null, "499fb13b-e3e7-44d7-9772-cf7a42ce9c30");
             }
 
             /// <summary>
@@ -582,6 +612,54 @@ namespace Ranorex_exercise
                 get
                 {
                     return _sometextInfo;
+                }
+            }
+
+            /// <summary>
+            /// The input_To item.
+            /// </summary>
+            [RepositoryItem("c0ea88f2-9ebd-4027-9e38-b204b1754bb2")]
+            public virtual Ranorex.Text input_To
+            {
+                get
+                {
+                    return _input_toInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The input_To item info.
+            /// </summary>
+            [RepositoryItemInfo("c0ea88f2-9ebd-4027-9e38-b204b1754bb2")]
+            public virtual RepoItemInfo input_ToInfo
+            {
+                get
+                {
+                    return _input_toInfo;
+                }
+            }
+
+            /// <summary>
+            /// The edit_MessageBox item.
+            /// </summary>
+            [RepositoryItem("499fb13b-e3e7-44d7-9772-cf7a42ce9c30")]
+            public virtual Ranorex.Container edit_MessageBox
+            {
+                get
+                {
+                    return _edit_messageboxInfo.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The edit_MessageBox item info.
+            /// </summary>
+            [RepositoryItemInfo("499fb13b-e3e7-44d7-9772-cf7a42ce9c30")]
+            public virtual RepoItemInfo edit_MessageBoxInfo
+            {
+                get
+                {
+                    return _edit_messageboxInfo;
                 }
             }
         }

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="bd025c79-8c14-4d48-8489-f04ade388445"
+id="63fb368c-24b0-4f8d-b069-1660675a1c18"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,7 +19,7 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Click_Button_Reply"
+	classname="Click_Button_Forward"
 	namespace="Ranorex_exercise">
 	</codegen>
 	<variables>
@@ -33,7 +33,7 @@ mode="Global">
 		loc="Center"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="7874dde3-f431-4b20-a6d9-8c775ae32d12"
+		searchpropertyid="cbae05db-2ed5-4580-ada2-3e1d07f9c1d9"
 		sx="0"
 		sy="0"
 		warnoutofbounds="False">
@@ -42,10 +42,10 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="a2854dda-c5f0-435e-baec-83e17d6b0447"
+			id="0c253750-0583-474c-a03d-e2c10313709d"
 			sourcename="ItemRecorderEditor">
 				<path>
-					/form[@automationid='']//tabpage[@title='Home']/button[@name='CollapsedButton' and @text='Respond']/?/?/button[@text='Reply']
+					/form[@automationid='']//tabpage[@title='Home']/button[@name='CollapsedButton' and @text='Respond']/?/?/button[@text='Forward']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -67,7 +67,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Click_Button_Reply.UserCode.cs
+		Click_Button_Forward.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

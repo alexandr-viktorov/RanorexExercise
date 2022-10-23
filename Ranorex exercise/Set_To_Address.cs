@@ -24,34 +24,47 @@ namespace Ranorex_exercise
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Click_Button_Reply recording.
+    ///The Set_To_Address recording.
     /// </summary>
-    [TestModule("bd025c79-8c14-4d48-8489-f04ade388445", ModuleType.Recording, 1)]
-    public partial class Click_Button_Reply : ITestModule
+    [TestModule("bee505d7-41a4-42cb-9bb8-810b91a836b1", ModuleType.Recording, 1)]
+    public partial class Set_To_Address : ITestModule
     {
         /// <summary>
         /// Holds an instance of the Ranorex_exerciseRepository repository.
         /// </summary>
         public static Ranorex_exerciseRepository repo = Ranorex_exerciseRepository.Instance;
 
-        static Click_Button_Reply instance = new Click_Button_Reply();
+        static Set_To_Address instance = new Set_To_Address();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Click_Button_Reply()
+        public Set_To_Address()
         {
+            ToAddress = "test.email@test.test";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Click_Button_Reply Instance
+        public static Set_To_Address Instance
         {
             get { return instance; }
         }
 
 #region Variables
+
+        string _ToAddress;
+
+        /// <summary>
+        /// Gets or sets the value of variable ToAddress.
+        /// </summary>
+        [TestVariable("d6c6b83d-502e-4f78-9eee-5e70d406a89d")]
+        public string ToAddress
+        {
+            get { return _ToAddress; }
+            set { _ToAddress = value; }
+        }
 
 #endregion
 
@@ -79,9 +92,13 @@ namespace Ranorex_exercise
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MarkAttelerikdomainComMyApplication.HomeTab.button_Reply' at Center.", repo.MarkAttelerikdomainComMyApplication.HomeTab.button_ReplyInfo, new RecordItemIndex(0));
-            repo.MarkAttelerikdomainComMyApplication.HomeTab.button_Reply.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MarkAttelerikdomainComMyApplication.ViewEditMailPanel.input_To' at Center.", repo.MarkAttelerikdomainComMyApplication.ViewEditMailPanel.input_ToInfo, new RecordItemIndex(0));
+            repo.MarkAttelerikdomainComMyApplication.ViewEditMailPanel.input_To.Click();
             Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$ToAddress' with focus on 'MarkAttelerikdomainComMyApplication.ViewEditMailPanel.input_To'.", repo.MarkAttelerikdomainComMyApplication.ViewEditMailPanel.input_ToInfo, new RecordItemIndex(1));
+            repo.MarkAttelerikdomainComMyApplication.ViewEditMailPanel.input_To.PressKeys(ToAddress);
+            Delay.Milliseconds(20);
             
         }
 

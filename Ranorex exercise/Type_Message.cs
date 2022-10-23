@@ -24,34 +24,47 @@ namespace Ranorex_exercise
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Click_Button_Reply recording.
+    ///The Type_Message recording.
     /// </summary>
-    [TestModule("bd025c79-8c14-4d48-8489-f04ade388445", ModuleType.Recording, 1)]
-    public partial class Click_Button_Reply : ITestModule
+    [TestModule("b5cea646-1641-4c87-b66e-eb69e40f250a", ModuleType.Recording, 1)]
+    public partial class Type_Message : ITestModule
     {
         /// <summary>
         /// Holds an instance of the Ranorex_exerciseRepository repository.
         /// </summary>
         public static Ranorex_exerciseRepository repo = Ranorex_exerciseRepository.Instance;
 
-        static Click_Button_Reply instance = new Click_Button_Reply();
+        static Type_Message instance = new Type_Message();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Click_Button_Reply()
+        public Type_Message()
         {
+            MessageText = "FYI";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Click_Button_Reply Instance
+        public static Type_Message Instance
         {
             get { return instance; }
         }
 
 #region Variables
+
+        string _MessageText;
+
+        /// <summary>
+        /// Gets or sets the value of variable MessageText.
+        /// </summary>
+        [TestVariable("f85ea9b0-6b75-4907-9f65-e122f678f823")]
+        public string MessageText
+        {
+            get { return _MessageText; }
+            set { _MessageText = value; }
+        }
 
 #endregion
 
@@ -79,8 +92,20 @@ namespace Ranorex_exercise
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MarkAttelerikdomainComMyApplication.HomeTab.button_Reply' at Center.", repo.MarkAttelerikdomainComMyApplication.HomeTab.button_ReplyInfo, new RecordItemIndex(0));
-            repo.MarkAttelerikdomainComMyApplication.HomeTab.button_Reply.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MarkAttelerikdomainComMyApplication.ViewEditMailPanel.edit_MessageBox' at Center.", repo.MarkAttelerikdomainComMyApplication.ViewEditMailPanel.edit_MessageBoxInfo, new RecordItemIndex(0));
+            repo.MarkAttelerikdomainComMyApplication.ViewEditMailPanel.edit_MessageBox.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LControlKey down}{Home}{LControlKey up}' with focus on 'MarkAttelerikdomainComMyApplication.ViewEditMailPanel.edit_MessageBox'.", repo.MarkAttelerikdomainComMyApplication.ViewEditMailPanel.edit_MessageBoxInfo, new RecordItemIndex(1));
+            repo.MarkAttelerikdomainComMyApplication.ViewEditMailPanel.edit_MessageBox.PressKeys("{LControlKey down}{Home}{LControlKey up}");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$MessageText' with focus on 'MarkAttelerikdomainComMyApplication.ViewEditMailPanel.edit_MessageBox'.", repo.MarkAttelerikdomainComMyApplication.ViewEditMailPanel.edit_MessageBoxInfo, new RecordItemIndex(2));
+            repo.MarkAttelerikdomainComMyApplication.ViewEditMailPanel.edit_MessageBox.PressKeys(MessageText);
+            Delay.Milliseconds(20);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}{Return}' with focus on 'MarkAttelerikdomainComMyApplication.ViewEditMailPanel.edit_MessageBox'.", repo.MarkAttelerikdomainComMyApplication.ViewEditMailPanel.edit_MessageBoxInfo, new RecordItemIndex(3));
+            repo.MarkAttelerikdomainComMyApplication.ViewEditMailPanel.edit_MessageBox.PressKeys("{Return}{Return}");
             Delay.Milliseconds(0);
             
         }

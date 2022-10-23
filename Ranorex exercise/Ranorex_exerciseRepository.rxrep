@@ -135,6 +135,15 @@ name="Ranorex_exerciseRepository">
 				searchtimeout="30000ms">
 					/form[@automationid='']//tabpage[@title='Home']/button[@name='CollapsedButton' and @text='Respond']/?/?/button[@text='Reply']
 				</item>
+				<item
+				capname="button"
+				id="0c253750-0583-474c-a03d-e2c10313709d"
+				name="button_Forward"
+				refimgid="df6f7363-4bc6-41b3-b0f9-d74d8835abd8"
+				robustPath="/form[@automationid='']//button[@text='Forward']"
+				searchtimeout="30000ms">
+					/form[@automationid='']//tabpage[@title='Home']/button[@name='CollapsedButton' and @text='Respond']/?/?/button[@text='Forward']
+				</item>
 			</folder>
 			<folder
 			capname="unknown"
@@ -163,6 +172,23 @@ name="Ranorex_exerciseRepository">
 				robustPath="/form[@automationid='']//container[@automationid='LinesDocumentLayer']/text[2]"
 				searchtimeout="30000ms">
 					/form[@automationid='']//container[@automationid='MainSectorTemplate']/?/?/container[@automationid='editableRichTextBox']/container[@automationid='ViewPresenter']/container[@automationid='LinesDocumentLayer']/text[2]
+				</item>
+				<item
+				capname="text"
+				id="c0ea88f2-9ebd-4027-9e38-b204b1754bb2"
+				name="input_To"
+				refimgid="f8ee7ed6-1dda-4f8c-98f3-a856b91d7bdf"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@automationid='']/container[@caption='']/tabpagelist[@automationid='OutlookBar']/container[@automationid='MainSectorTemplate']//text[@caption='To...']/following-sibling::text/text[@caption=''][1]
+				</item>
+				<item
+				capname="container"
+				id="499fb13b-e3e7-44d7-9772-cf7a42ce9c30"
+				name="edit_MessageBox"
+				robustPath="/form[@automationid='']//container[@automationid='LinesDocumentLayer']/text[17]"
+				searchtimeout="30000ms">
+					/form[@automationid='']/container[@caption='']/?/?/container[@automationid='MainSectorTemplate']/?/?/container[@automationid='editableRichTextBox']
 				</item>
 			</folder>
 			<basepath>
