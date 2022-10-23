@@ -24,34 +24,47 @@ namespace Ranorex_exercise
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Validate_Email_Message_Content recording.
+    ///The Validate_Email_Subject recording.
     /// </summary>
-    [TestModule("e9c93f92-a3b3-4971-b73f-07aef07cba7d", ModuleType.Recording, 1)]
-    public partial class Validate_Email_Message_Content : ITestModule
+    [TestModule("7de4455a-c487-4b88-8dff-c9b0636c1d23", ModuleType.Recording, 1)]
+    public partial class Validate_Email_Subject : ITestModule
     {
         /// <summary>
         /// Holds an instance of the Ranorex_exerciseRepository repository.
         /// </summary>
         public static Ranorex_exerciseRepository repo = Ranorex_exerciseRepository.Instance;
 
-        static Validate_Email_Message_Content instance = new Validate_Email_Message_Content();
+        static Validate_Email_Subject instance = new Validate_Email_Subject();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Validate_Email_Message_Content()
+        public Validate_Email_Subject()
         {
+            ControlValue = "FW: How can I implement \"FiletringBehavior\" ?";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Validate_Email_Message_Content Instance
+        public static Validate_Email_Subject Instance
         {
             get { return instance; }
         }
 
 #region Variables
+
+        string _ControlValue;
+
+        /// <summary>
+        /// Gets or sets the value of variable ControlValue.
+        /// </summary>
+        [TestVariable("9d97a1f2-193f-4bc8-a150-27ef2e5000a8")]
+        public string ControlValue
+        {
+            get { return _ControlValue; }
+            set { _ControlValue = value; }
+        }
 
 #endregion
 
@@ -79,9 +92,9 @@ namespace Ranorex_exercise
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='In all versions of Telerik controls released in 2013 the ability to implement custom FilteringBehavior for RadAutoCompleteBox is available') on item 'MarkAttelerikdomainComMyApplication.ViewEditMailPanel.SomeText1'.", repo.MarkAttelerikdomainComMyApplication.ViewEditMailPanel.SomeText1Info, new RecordItemIndex(0));
-            Validate.AttributeEqual(repo.MarkAttelerikdomainComMyApplication.ViewEditMailPanel.SomeText1Info, "Text", "In all versions of Telerik controls released in 2013 the ability to implement custom FilteringBehavior for RadAutoCompleteBox is available");
-            Delay.Milliseconds(100);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$ControlValue) on item 'MarkAttelerikdomainComMyApplication.ViewEditMailPanel.input_Subject'.", repo.MarkAttelerikdomainComMyApplication.ViewEditMailPanel.input_SubjectInfo, new RecordItemIndex(0));
+            Validate.AttributeEqual(repo.MarkAttelerikdomainComMyApplication.ViewEditMailPanel.input_SubjectInfo, "Text", ControlValue);
+            Delay.Milliseconds(0);
             
         }
 

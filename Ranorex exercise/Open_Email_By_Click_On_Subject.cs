@@ -89,8 +89,8 @@ namespace Ranorex_exercise
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MarkAttelerikdomainComMyApplication.MailListPanel.cell_EmailSubject' at 36;33.", repo.MarkAttelerikdomainComMyApplication.MailListPanel.cell_EmailSubjectInfo, new RecordItemIndex(0));
-            repo.MarkAttelerikdomainComMyApplication.MailListPanel.cell_EmailSubject.Click("36;33");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MarkAttelerikdomainComMyApplication.MailListPanel.cell_EmailSubject' at Center.", repo.MarkAttelerikdomainComMyApplication.MailListPanel.cell_EmailSubjectInfo, new RecordItemIndex(0));
+            repo.MarkAttelerikdomainComMyApplication.MailListPanel.cell_EmailSubject.Click();
             Delay.Milliseconds(0);
             
         }

@@ -542,6 +542,7 @@ namespace Ranorex_exercise
             RepoItemInfo _sometextInfo;
             RepoItemInfo _input_toInfo;
             RepoItemInfo _edit_messageboxInfo;
+            RepoItemInfo _input_subjectInfo;
 
             /// <summary>
             /// Creates a new ViewEditMailPanel  folder.
@@ -551,8 +552,9 @@ namespace Ranorex_exercise
             {
                 _sometext1Info = new RepoItemInfo(this, "SomeText1", ".//container[@automationid='MainSectorTemplate']/?/?/container[@automationid='editableRichTextBox']/container[@automationid='ViewPresenter']/container[@automationid='LinesDocumentLayer']/text[4]", ".//container[@automationid='LinesDocumentLayer']/text[4]", 30000, null, "cc91bb28-e964-4ae4-aa25-fd112a2ccdbb");
                 _sometextInfo = new RepoItemInfo(this, "SomeText", ".//container[@automationid='MainSectorTemplate']/?/?/container[@automationid='editableRichTextBox']/container[@automationid='ViewPresenter']/container[@automationid='LinesDocumentLayer']/text[2]", ".//container[@automationid='LinesDocumentLayer']/text[2]", 30000, null, "e47fa634-0f17-4693-baef-0cc70f17a181");
-                _input_toInfo = new RepoItemInfo(this, "input_To", "container[@caption='']/tabpagelist[@automationid='OutlookBar']/container[@automationid='MainSectorTemplate']//text[@caption='To...']/following-sibling::text/text[@caption=''][1]", "", 30000, null, "c0ea88f2-9ebd-4027-9e38-b204b1754bb2");
+                _input_toInfo = new RepoItemInfo(this, "input_To", "container[@caption='']/tabpagelist[@automationid='OutlookBar']/container[@automationid='MainSectorTemplate']//text[@caption='To...']/following-sibling::text", "", 30000, null, "c0ea88f2-9ebd-4027-9e38-b204b1754bb2");
                 _edit_messageboxInfo = new RepoItemInfo(this, "edit_MessageBox", "container[@caption='']/?/?/container[@automationid='MainSectorTemplate']/?/?/container[@automationid='editableRichTextBox']", ".//container[@automationid='LinesDocumentLayer']/text[17]", 30000, null, "499fb13b-e3e7-44d7-9772-cf7a42ce9c30");
+                _input_subjectInfo = new RepoItemInfo(this, "input_Subject", "container[@caption='']/tabpagelist[@automationid='OutlookBar']/container[@automationid='MainSectorTemplate']//text[@caption='Subject']/following-sibling::text", "", 30000, null, "9f6a5058-91b6-4f2f-9944-d87608a549d5");
             }
 
             /// <summary>
@@ -660,6 +662,30 @@ namespace Ranorex_exercise
                 get
                 {
                     return _edit_messageboxInfo;
+                }
+            }
+
+            /// <summary>
+            /// The input_Subject item.
+            /// </summary>
+            [RepositoryItem("9f6a5058-91b6-4f2f-9944-d87608a549d5")]
+            public virtual Ranorex.Text input_Subject
+            {
+                get
+                {
+                    return _input_subjectInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The input_Subject item info.
+            /// </summary>
+            [RepositoryItemInfo("9f6a5058-91b6-4f2f-9944-d87608a549d5")]
+            public virtual RepoItemInfo input_SubjectInfo
+            {
+                get
+                {
+                    return _input_subjectInfo;
                 }
             }
         }

@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace Ranorex_exercise
 {
-    public partial class Validate_Email_Message_Content
+    public partial class Validate_Email_Subject
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

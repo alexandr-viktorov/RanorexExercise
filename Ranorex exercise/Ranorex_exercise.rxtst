@@ -37,6 +37,20 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="189d5f06-e662-4db5-ab26-495013d33e39"
+			name="Validate_Email_Subject"
+			ref="7de4455a-c487-4b88-8dff-c9b0636c1d23"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="ControlValue"
+					datasourceid="46bb6a07-ed82-4a32-bf36-a0bf23699d36"
+					variableid="9d97a1f2-193f-4bc8-a150-27ef2e5000a8"
+					variablename="ControlValue">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="1a8c81b3-e326-4917-81bd-8d8ac49143b3"
 			name="Click_Button_Reply"
 			ref="bd025c79-8c14-4d48-8489-f04ade388445"
@@ -100,7 +114,7 @@
 			</testcase>
 			<smartfoldernode
 			datarangeactive="True"
-			datasource="RepplyConnector"
+			datasource="ReplyEmailConnector"
 			id="6d073437-3c14-4947-b19c-e6b3d44d88c8"
 			maxrange="5"
 			minrange="3"
@@ -131,6 +145,20 @@
 					datasourceid="46bb6a07-ed82-4a32-bf36-a0bf23699d36"
 					variableid="f93a521c-909a-4520-a23b-7c85ad22bf2a"
 					variablename="EmaillSubject">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="a6cdafcb-ff7c-4688-a14c-bbd0f3e1a667"
+			name="Validate_Email_Subject"
+			ref="7de4455a-c487-4b88-8dff-c9b0636c1d23"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="ControlValue"
+					datasourceid="138ac565-255f-4564-af0f-d21afcb2bff1"
+					variableid="9d97a1f2-193f-4bc8-a150-27ef2e5000a8"
+					variablename="ControlValue">
 					</var>
 				</databinding>
 			</testmodule>
@@ -319,6 +347,10 @@
 							name="Click_Button_Reply">
 							</testmodule>
 							<testmodule
+							id="a6cdafcb-ff7c-4688-a14c-bbd0f3e1a667"
+							name="Validate_Email_Subject">
+							</testmodule>
+							<testmodule
 							id="12b8f253-c423-40ec-b43a-3c774e71a470"
 							name="Type_Message">
 							</testmodule>
@@ -369,6 +401,10 @@
 							<testmodule
 							id="f8c8df3a-dc87-4d11-a570-ce0a6b39c073"
 							name="Click_Button_Forward">
+							</testmodule>
+							<testmodule
+							id="189d5f06-e662-4db5-ab26-495013d33e39"
+							name="Validate_Email_Subject">
 							</testmodule>
 							<testmodule
 							id="eac59d7f-bd06-41ab-b73c-9d7b8086851b"
@@ -444,7 +480,7 @@
 		id="138ac565-255f-4564-af0f-d21afcb2bff1"
 		includefile="Checked"
 		lastknownrowcount="6"
-		name="RepplyConnector"
+		name="ReplyEmailConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
 			<lastknowncolumns>
@@ -482,10 +518,10 @@
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="5d1135fb-e92d-47f0-a830-e3112026b0bb">
+			id="538b77bf-4c15-4cc8-b48e-c2222c3dd593">
 			</testcontainer>
 			<testcontainer
-			id="6d073437-3c14-4947-b19c-e6b3d44d88c8">
+			id="ab9ef480-aeae-4cea-9fd4-c81c2b09e4b4">
 			</testcontainer>
 			<testcontainer
 			id="f87fb669-0d3f-43e2-968f-dbcea5115cd2">

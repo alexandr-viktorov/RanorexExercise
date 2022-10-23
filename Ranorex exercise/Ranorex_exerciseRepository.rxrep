@@ -177,10 +177,10 @@ name="Ranorex_exerciseRepository">
 				capname="text"
 				id="c0ea88f2-9ebd-4027-9e38-b204b1754bb2"
 				name="input_To"
-				refimgid="f8ee7ed6-1dda-4f8c-98f3-a856b91d7bdf"
+				refimgid="0534560d-5029-4f1e-954d-fdcbc663f48b"
 				robustPath=""
 				searchtimeout="30000ms">
-					/form[@automationid='']/container[@caption='']/tabpagelist[@automationid='OutlookBar']/container[@automationid='MainSectorTemplate']//text[@caption='To...']/following-sibling::text/text[@caption=''][1]
+					/form[@automationid='']/container[@caption='']/tabpagelist[@automationid='OutlookBar']/container[@automationid='MainSectorTemplate']//text[@caption='To...']/following-sibling::text
 				</item>
 				<item
 				capname="container"
@@ -189,6 +189,15 @@ name="Ranorex_exerciseRepository">
 				robustPath="/form[@automationid='']//container[@automationid='LinesDocumentLayer']/text[17]"
 				searchtimeout="30000ms">
 					/form[@automationid='']/container[@caption='']/?/?/container[@automationid='MainSectorTemplate']/?/?/container[@automationid='editableRichTextBox']
+				</item>
+				<item
+				capname="text"
+				id="9f6a5058-91b6-4f2f-9944-d87608a549d5"
+				name="input_Subject"
+				refimgid="9bb2d490-aafc-43cb-b3bc-54d79b1e600a"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@automationid='']/container[@caption='']/tabpagelist[@automationid='OutlookBar']/container[@automationid='MainSectorTemplate']//text[@caption='Subject']/following-sibling::text
 				</item>
 			</folder>
 			<basepath>

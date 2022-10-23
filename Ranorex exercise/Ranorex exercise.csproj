@@ -290,17 +290,17 @@
       <UserCode>true</UserCode>
       <id>4cf7a690-fad1-4c4a-893c-8ff0565c515c</id>
     </Compile>
-    <Compile Include="Validate_Email_Message_Content.cs">
-      <BoundTo>63c5cbcf-d9f7-45a9-a1c3-5bcf350f23d8</BoundTo>
-      <DependentUpon>Validate_Email_Message_Content.rxrec</DependentUpon>
+    <Compile Include="Validate_Email_Subject.cs">
+      <BoundTo>36fb43e4-76bc-4c78-b4d9-751e084c87fd</BoundTo>
+      <DependentUpon>Validate_Email_Subject.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
-      <id>fec989cd-42b3-4790-9634-2776edc52107</id>
+      <id>2e0e2f6b-e492-451d-aa49-9ea402ca9b70</id>
     </Compile>
-    <Compile Include="Validate_Email_Message_Content.UserCode.cs">
-      <BoundTo>63c5cbcf-d9f7-45a9-a1c3-5bcf350f23d8</BoundTo>
-      <DependentUpon>Validate_Email_Message_Content.rxrec</DependentUpon>
+    <Compile Include="Validate_Email_Subject.UserCode.cs">
+      <BoundTo>36fb43e4-76bc-4c78-b4d9-751e084c87fd</BoundTo>
+      <DependentUpon>Validate_Email_Subject.rxrec</DependentUpon>
       <UserCode>true</UserCode>
-      <id>5dda3366-b43f-40d4-bfd6-424a4c618dcd</id>
+      <id>69a1186d-4f98-4648-b5c0-44296ecb6c31</id>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -397,10 +397,10 @@
       <id>672ac9a1-8641-46d2-b663-3ef6d7ee0f5b</id>
       <recordtableid>b5cea646-1641-4c87-b66e-eb69e40f250a</recordtableid>
     </None>
-    <None Include="Validate_Email_Message_Content.rxrec">
+    <None Include="Validate_Email_Subject.rxrec">
       <BoundTo>429deec9-fd71-4fa2-a554-4ead09176a36</BoundTo>
-      <id>63c5cbcf-d9f7-45a9-a1c3-5bcf350f23d8</id>
-      <recordtableid>e9c93f92-a3b3-4971-b73f-07aef07cba7d</recordtableid>
+      <id>36fb43e4-76bc-4c78-b4d9-751e084c87fd</id>
+      <recordtableid>7de4455a-c487-4b88-8dff-c9b0636c1d23</recordtableid>
     </None>
   </ItemGroup>
   <ItemGroup>
