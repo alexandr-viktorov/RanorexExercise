@@ -1,5 +1,5 @@
 # RanorexExercise
-Here example of test suite created in Ranorex Studio for WPF test application
+Here is example of test suite created in Ranorex Studio for WPF test application
  
 # Setup
 To run this test suite need to perform following steps
@@ -40,7 +40,5 @@ Two test scenarios were implemented:
 12. Close application.
 
 #Please note
-
 For current setup the test 'Reply On Email' is failed cause on third iteration the error message comes up:
-
-"Please make sure you enter at least one correct recipient address."
+    "Please make sure you enter at least one correct recipient address."
