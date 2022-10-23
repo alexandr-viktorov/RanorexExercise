@@ -24,34 +24,60 @@ namespace Ranorex_exercise
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The CheckEmailInSendFolder recording.
+    ///The Search_Email_By_Subject recording.
     /// </summary>
-    [TestModule("2953d67a-7769-41a7-8158-388af813a75e", ModuleType.Recording, 1)]
-    public partial class CheckEmailInSendFolder : ITestModule
+    [TestModule("9fcae4e3-c7a8-41a7-a52d-6de136ead007", ModuleType.Recording, 1)]
+    public partial class Search_Email_By_Subject : ITestModule
     {
         /// <summary>
         /// Holds an instance of the Ranorex_exerciseRepository repository.
         /// </summary>
         public static Ranorex_exerciseRepository repo = Ranorex_exerciseRepository.Instance;
 
-        static CheckEmailInSendFolder instance = new CheckEmailInSendFolder();
+        static Search_Email_By_Subject instance = new Search_Email_By_Subject();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public CheckEmailInSendFolder()
+        public Search_Email_By_Subject()
         {
+            SearchValue = "How can i";
+            Subject = "How can i";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static CheckEmailInSendFolder Instance
+        public static Search_Email_By_Subject Instance
         {
             get { return instance; }
         }
 
 #region Variables
+
+        string _SearchValue;
+
+        /// <summary>
+        /// Gets or sets the value of variable SearchValue.
+        /// </summary>
+        [TestVariable("efc2416b-3cfd-4f0f-bb18-7293134d9a9d")]
+        public string SearchValue
+        {
+            get { return _SearchValue; }
+            set { _SearchValue = value; }
+        }
+
+        string _Subject;
+
+        /// <summary>
+        /// Gets or sets the value of variable Subject.
+        /// </summary>
+        [TestVariable("892882ed-5a73-485b-acd8-bcce1ae6df80")]
+        public string Subject
+        {
+            get { return _Subject; }
+            set { _Subject = value; }
+        }
 
 #endregion
 
@@ -79,17 +105,13 @@ namespace Ranorex_exercise
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MarkAttelerikdomainComMyApplication.MailListPanel.HowToAddPerpendicularLineInTelerik' at Center.", repo.MarkAttelerikdomainComMyApplication.MailListPanel.HowToAddPerpendicularLineInTelerikInfo, new RecordItemIndex(0));
-            repo.MarkAttelerikdomainComMyApplication.MailListPanel.HowToAddPerpendicularLineInTelerik.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MarkAttelerikdomainComMyApplication.MailListPanel.input_SearchMail' at 286;10.", repo.MarkAttelerikdomainComMyApplication.MailListPanel.input_SearchMailInfo, new RecordItemIndex(0));
+            repo.MarkAttelerikdomainComMyApplication.MailListPanel.input_SearchMail.Click("286;10");
+            Delay.Milliseconds(2170);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$SearchValue' with focus on 'MarkAttelerikdomainComMyApplication.MailListPanel.input_SearchMail'.", repo.MarkAttelerikdomainComMyApplication.MailListPanel.input_SearchMailInfo, new RecordItemIndex(1));
+            repo.MarkAttelerikdomainComMyApplication.MailListPanel.input_SearchMail.PressKeys(SearchValue);
             Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Caption='') on item 'MarkAttelerikdomainComMyApplication.ViewEditMailPanel.SomeText'.", repo.MarkAttelerikdomainComMyApplication.ViewEditMailPanel.SomeTextInfo, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.MarkAttelerikdomainComMyApplication.ViewEditMailPanel.SomeTextInfo, "Caption", "");
-            Delay.Milliseconds(100);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='You could either use the built in crosshair behavior or use annotations. ') on item 'MarkAttelerikdomainComMyApplication.ViewEditMailPanel.SomeText'.", repo.MarkAttelerikdomainComMyApplication.ViewEditMailPanel.SomeTextInfo, new RecordItemIndex(2));
-            Validate.AttributeEqual(repo.MarkAttelerikdomainComMyApplication.ViewEditMailPanel.SomeTextInfo, "Text", "You could either use the built in crosshair behavior or use annotations. ");
-            Delay.Milliseconds(100);
             
         }
 

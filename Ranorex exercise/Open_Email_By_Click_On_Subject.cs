@@ -24,34 +24,44 @@ namespace Ranorex_exercise
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The CheckEmailInSendFolder recording.
+    ///The Open_Email_By_Click_On_Subject recording.
     /// </summary>
-    [TestModule("2953d67a-7769-41a7-8158-388af813a75e", ModuleType.Recording, 1)]
-    public partial class CheckEmailInSendFolder : ITestModule
+    [TestModule("87244cb1-15b2-4bdc-8bbe-5e9be14c367d", ModuleType.Recording, 1)]
+    public partial class Open_Email_By_Click_On_Subject : ITestModule
     {
         /// <summary>
         /// Holds an instance of the Ranorex_exerciseRepository repository.
         /// </summary>
         public static Ranorex_exerciseRepository repo = Ranorex_exerciseRepository.Instance;
 
-        static CheckEmailInSendFolder instance = new CheckEmailInSendFolder();
+        static Open_Email_By_Click_On_Subject instance = new Open_Email_By_Click_On_Subject();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public CheckEmailInSendFolder()
+        public Open_Email_By_Click_On_Subject()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static CheckEmailInSendFolder Instance
+        public static Open_Email_By_Click_On_Subject Instance
         {
             get { return instance; }
         }
 
 #region Variables
+
+        /// <summary>
+        /// Gets or sets the value of variable EmaillSubject.
+        /// </summary>
+        [TestVariable("f93a521c-909a-4520-a23b-7c85ad22bf2a")]
+        public string EmaillSubject
+        {
+            get { return repo.EmaillSubject; }
+            set { repo.EmaillSubject = value; }
+        }
 
 #endregion
 
@@ -79,17 +89,9 @@ namespace Ranorex_exercise
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MarkAttelerikdomainComMyApplication.MailListPanel.HowToAddPerpendicularLineInTelerik' at Center.", repo.MarkAttelerikdomainComMyApplication.MailListPanel.HowToAddPerpendicularLineInTelerikInfo, new RecordItemIndex(0));
-            repo.MarkAttelerikdomainComMyApplication.MailListPanel.HowToAddPerpendicularLineInTelerik.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MarkAttelerikdomainComMyApplication.MailListPanel.cell_EmailSubject' at 36;33.", repo.MarkAttelerikdomainComMyApplication.MailListPanel.cell_EmailSubjectInfo, new RecordItemIndex(0));
+            repo.MarkAttelerikdomainComMyApplication.MailListPanel.cell_EmailSubject.Click("36;33");
             Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Caption='') on item 'MarkAttelerikdomainComMyApplication.ViewEditMailPanel.SomeText'.", repo.MarkAttelerikdomainComMyApplication.ViewEditMailPanel.SomeTextInfo, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.MarkAttelerikdomainComMyApplication.ViewEditMailPanel.SomeTextInfo, "Caption", "");
-            Delay.Milliseconds(100);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='You could either use the built in crosshair behavior or use annotations. ') on item 'MarkAttelerikdomainComMyApplication.ViewEditMailPanel.SomeText'.", repo.MarkAttelerikdomainComMyApplication.ViewEditMailPanel.SomeTextInfo, new RecordItemIndex(2));
-            Validate.AttributeEqual(repo.MarkAttelerikdomainComMyApplication.ViewEditMailPanel.SomeTextInfo, "Text", "You could either use the built in crosshair behavior or use annotations. ");
-            Delay.Milliseconds(100);
             
         }
 

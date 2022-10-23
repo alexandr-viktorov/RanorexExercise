@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace Ranorex_exercise
 {
-    public partial class ReplyOnMail
+    public partial class Search_Clear_Input_Field
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

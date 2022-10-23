@@ -137,6 +137,30 @@
       <UserCode>true</UserCode>
       <id>ee6c6828-fce1-40ef-8e52-1e3e9cd2ed10</id>
     </Compile>
+    <Compile Include="Search_Clear_Input_Field.cs">
+      <BoundTo>58a3823f-846e-426f-b921-b05b326ccf7e</BoundTo>
+      <DependentUpon>Search_Clear_Input_Field.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>268dd2f3-187e-4f56-bda9-6a90e2c27c1f</id>
+    </Compile>
+    <Compile Include="Search_Clear_Input_Field.UserCode.cs">
+      <BoundTo>58a3823f-846e-426f-b921-b05b326ccf7e</BoundTo>
+      <DependentUpon>Search_Clear_Input_Field.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7a48b18d-4cd3-4fe4-9b0b-256a1e4313bc</id>
+    </Compile>
+    <Compile Include="Click_Button_Send.cs">
+      <BoundTo>cdd547c0-b623-4646-8f40-fdb36e98b8b3</BoundTo>
+      <DependentUpon>Click_Button_Send.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1f823c7f-9252-4486-a648-de3683a8efd2</id>
+    </Compile>
+    <Compile Include="Click_Button_Send.UserCode.cs">
+      <BoundTo>cdd547c0-b623-4646-8f40-fdb36e98b8b3</BoundTo>
+      <DependentUpon>Click_Button_Send.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e6a44dd2-2bb8-4987-a037-b839e5ca9a97</id>
+    </Compile>
     <Compile Include="CloseAUT.cs">
       <BoundTo>a4f7b1fe-ce1b-4b98-9f2a-fd00da8f3a20</BoundTo>
       <DependentUpon>CloseAUT.rxrec</DependentUpon>
@@ -149,6 +173,42 @@
       <UserCode>true</UserCode>
       <id>390d9e53-5371-4ebd-bfd9-be72a24dcf5c</id>
     </Compile>
+    <Compile Include="Navigate_To_Send_Folder.cs">
+      <BoundTo>d56bdfe8-d300-4270-a206-190552921969</BoundTo>
+      <DependentUpon>Navigate_To_Send_Folder.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>00884d31-7540-499d-869e-d8e87bdfe554</id>
+    </Compile>
+    <Compile Include="Navigate_To_Send_Folder.UserCode.cs">
+      <BoundTo>d56bdfe8-d300-4270-a206-190552921969</BoundTo>
+      <DependentUpon>Navigate_To_Send_Folder.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>aae1d269-7220-48ab-aa37-fa25b68c5f88</id>
+    </Compile>
+    <Compile Include="Open_Email_By_Click_On_Subject.cs">
+      <BoundTo>2e46ca80-c759-4b27-a2bd-212ebd11c730</BoundTo>
+      <DependentUpon>Open_Email_By_Click_On_Subject.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>557895a4-ca14-4837-bd8f-8520dbac7840</id>
+    </Compile>
+    <Compile Include="Open_Email_By_Click_On_Subject.UserCode.cs">
+      <BoundTo>2e46ca80-c759-4b27-a2bd-212ebd11c730</BoundTo>
+      <DependentUpon>Open_Email_By_Click_On_Subject.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>dcb6aa8c-4b7c-46cc-815f-3038b4f533a6</id>
+    </Compile>
+    <Compile Include="Navigate_To_Inbox_Folder.cs">
+      <BoundTo>3eb6353c-e607-4561-8356-da122d7e7458</BoundTo>
+      <DependentUpon>Navigate_To_Inbox_Folder.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6cffd704-320f-4b9d-b449-60d5221aaae9</id>
+    </Compile>
+    <Compile Include="Navigate_To_Inbox_Folder.UserCode.cs">
+      <BoundTo>3eb6353c-e607-4561-8356-da122d7e7458</BoundTo>
+      <DependentUpon>Navigate_To_Inbox_Folder.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f613dcab-376d-47b1-8550-966e7506b3f7</id>
+    </Compile>
     <Compile Include="Program.cs">
       <id>359b8032-ac82-4423-b7d3-7529e6bc15a6</id>
     </Compile>
@@ -158,17 +218,29 @@
       <RepositoryCode>true</RepositoryCode>
       <id>574c31c7-2b2b-4c84-a303-9cdb1ffbde34</id>
     </Compile>
-    <Compile Include="ReplyOnMail.cs">
+    <Compile Include="Click_Button_Reply.cs">
       <BoundTo>c0798546-55d6-494d-9cf3-628f9113a588</BoundTo>
-      <DependentUpon>ReplyOnMail.rxrec</DependentUpon>
+      <DependentUpon>Click_Button_Reply.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>c918df6f-8c1a-48a4-9f75-d79e58b5a003</id>
     </Compile>
-    <Compile Include="ReplyOnMail.UserCode.cs">
+    <Compile Include="Click_Button_Reply.UserCode.cs">
       <BoundTo>c0798546-55d6-494d-9cf3-628f9113a588</BoundTo>
-      <DependentUpon>ReplyOnMail.rxrec</DependentUpon>
+      <DependentUpon>Click_Button_Reply.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>63c93e04-374f-41a9-b333-0fbee378f0ed</id>
+    </Compile>
+    <Compile Include="Search_Email_By_Subject.cs">
+      <BoundTo>8af57717-ec14-4c2e-9e59-dc58e905cf13</BoundTo>
+      <DependentUpon>Search_Email_By_Subject.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b69b8de0-7046-4555-a818-6b3534e9ecdd</id>
+    </Compile>
+    <Compile Include="Search_Email_By_Subject.UserCode.cs">
+      <BoundTo>8af57717-ec14-4c2e-9e59-dc58e905cf13</BoundTo>
+      <DependentUpon>Search_Email_By_Subject.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>fed23ee1-a308-44d6-a01e-552e5d66fbe7</id>
     </Compile>
     <Compile Include="StartAUT.cs">
       <BoundTo>cc8d12a4-531f-480f-a76b-e8c1b5dfbd71</BoundTo>
@@ -182,6 +254,18 @@
       <UserCode>true</UserCode>
       <id>96929a39-d99a-4075-b961-18f466e84925</id>
     </Compile>
+    <Compile Include="Validate_Email_Message_Content.cs">
+      <BoundTo>63c5cbcf-d9f7-45a9-a1c3-5bcf350f23d8</BoundTo>
+      <DependentUpon>Validate_Email_Message_Content.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>fec989cd-42b3-4790-9634-2776edc52107</id>
+    </Compile>
+    <Compile Include="Validate_Email_Message_Content.UserCode.cs">
+      <BoundTo>63c5cbcf-d9f7-45a9-a1c3-5bcf350f23d8</BoundTo>
+      <DependentUpon>Validate_Email_Message_Content.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5dda3366-b43f-40d4-bfd6-424a4c618dcd</id>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config">
@@ -192,10 +276,35 @@
       <id>890218b7-de8e-461c-9f7f-2dccd7be7745</id>
       <recordtableid>2953d67a-7769-41a7-8158-388af813a75e</recordtableid>
     </None>
+    <None Include="Search_Clear_Input_Field.rxrec">
+      <BoundTo>429deec9-fd71-4fa2-a554-4ead09176a36</BoundTo>
+      <id>58a3823f-846e-426f-b921-b05b326ccf7e</id>
+      <recordtableid>e19f70af-18bc-4a34-a15e-7d5bb980b32e</recordtableid>
+    </None>
+    <None Include="Click_Button_Send.rxrec">
+      <BoundTo>429deec9-fd71-4fa2-a554-4ead09176a36</BoundTo>
+      <id>cdd547c0-b623-4646-8f40-fdb36e98b8b3</id>
+      <recordtableid>a5429b83-ec66-49ab-b58d-aa4f0bf0fd35</recordtableid>
+    </None>
     <None Include="CloseAUT.rxrec">
       <BoundTo>429deec9-fd71-4fa2-a554-4ead09176a36</BoundTo>
       <id>a4f7b1fe-ce1b-4b98-9f2a-fd00da8f3a20</id>
       <recordtableid>9d3a7a06-d746-4e4f-ad87-59ae3ae16041</recordtableid>
+    </None>
+    <None Include="Navigate_To_Send_Folder.rxrec">
+      <BoundTo>429deec9-fd71-4fa2-a554-4ead09176a36</BoundTo>
+      <id>d56bdfe8-d300-4270-a206-190552921969</id>
+      <recordtableid>fed8798d-fdb7-457e-8700-a9f33a386133</recordtableid>
+    </None>
+    <None Include="Open_Email_By_Click_On_Subject.rxrec">
+      <BoundTo>429deec9-fd71-4fa2-a554-4ead09176a36</BoundTo>
+      <id>2e46ca80-c759-4b27-a2bd-212ebd11c730</id>
+      <recordtableid>87244cb1-15b2-4bdc-8bbe-5e9be14c367d</recordtableid>
+    </None>
+    <None Include="Navigate_To_Inbox_Folder.rxrec">
+      <BoundTo>429deec9-fd71-4fa2-a554-4ead09176a36</BoundTo>
+      <id>3eb6353c-e607-4561-8356-da122d7e7458</id>
+      <recordtableid>d059b543-c8e2-4be6-9f68-a9918eca1d81</recordtableid>
     </None>
     <None Include="Ranorex_exerciseRepository.rximg">
       <BoundTo>429deec9-fd71-4fa2-a554-4ead09176a36</BoundTo>
@@ -208,15 +317,25 @@
       <repoid>2dbdd3c9-6e24-4d10-bd3d-1fd27a029574</repoid>
       <reporootid>6a3ff6d0-3c9c-4c5a-9f3e-8bdfe058f992</reporootid>
     </None>
-    <None Include="ReplyOnMail.rxrec">
+    <None Include="Click_Button_Reply.rxrec">
       <BoundTo>429deec9-fd71-4fa2-a554-4ead09176a36</BoundTo>
       <id>c0798546-55d6-494d-9cf3-628f9113a588</id>
       <recordtableid>715a4290-40cd-46fc-be8f-f8a13835546e</recordtableid>
+    </None>
+    <None Include="Search_Email_By_Subject.rxrec">
+      <BoundTo>429deec9-fd71-4fa2-a554-4ead09176a36</BoundTo>
+      <id>8af57717-ec14-4c2e-9e59-dc58e905cf13</id>
+      <recordtableid>9fcae4e3-c7a8-41a7-a52d-6de136ead007</recordtableid>
     </None>
     <None Include="StartAUT.rxrec">
       <BoundTo>429deec9-fd71-4fa2-a554-4ead09176a36</BoundTo>
       <id>cc8d12a4-531f-480f-a76b-e8c1b5dfbd71</id>
       <recordtableid>79414303-681d-4920-976e-e39e0e900603</recordtableid>
+    </None>
+    <None Include="Validate_Email_Message_Content.rxrec">
+      <BoundTo>429deec9-fd71-4fa2-a554-4ead09176a36</BoundTo>
+      <id>63c5cbcf-d9f7-45a9-a1c3-5bcf350f23d8</id>
+      <recordtableid>e9c93f92-a3b3-4971-b73f-07aef07cba7d</recordtableid>
     </None>
   </ItemGroup>
   <ItemGroup>

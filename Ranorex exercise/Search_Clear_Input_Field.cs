@@ -24,29 +24,29 @@ namespace Ranorex_exercise
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The CheckEmailInSendFolder recording.
+    ///The Search_Clear_Input_Field recording.
     /// </summary>
-    [TestModule("2953d67a-7769-41a7-8158-388af813a75e", ModuleType.Recording, 1)]
-    public partial class CheckEmailInSendFolder : ITestModule
+    [TestModule("e19f70af-18bc-4a34-a15e-7d5bb980b32e", ModuleType.Recording, 1)]
+    public partial class Search_Clear_Input_Field : ITestModule
     {
         /// <summary>
         /// Holds an instance of the Ranorex_exerciseRepository repository.
         /// </summary>
         public static Ranorex_exerciseRepository repo = Ranorex_exerciseRepository.Instance;
 
-        static CheckEmailInSendFolder instance = new CheckEmailInSendFolder();
+        static Search_Clear_Input_Field instance = new Search_Clear_Input_Field();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public CheckEmailInSendFolder()
+        public Search_Clear_Input_Field()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static CheckEmailInSendFolder Instance
+        public static Search_Clear_Input_Field Instance
         {
             get { return instance; }
         }
@@ -79,17 +79,13 @@ namespace Ranorex_exercise
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MarkAttelerikdomainComMyApplication.MailListPanel.HowToAddPerpendicularLineInTelerik' at Center.", repo.MarkAttelerikdomainComMyApplication.MailListPanel.HowToAddPerpendicularLineInTelerikInfo, new RecordItemIndex(0));
-            repo.MarkAttelerikdomainComMyApplication.MailListPanel.HowToAddPerpendicularLineInTelerik.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MarkAttelerikdomainComMyApplication.MailListPanel.input_SearchMail' at Center.", repo.MarkAttelerikdomainComMyApplication.MailListPanel.input_SearchMailInfo, new RecordItemIndex(0));
+            repo.MarkAttelerikdomainComMyApplication.MailListPanel.input_SearchMail.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Caption='') on item 'MarkAttelerikdomainComMyApplication.ViewEditMailPanel.SomeText'.", repo.MarkAttelerikdomainComMyApplication.ViewEditMailPanel.SomeTextInfo, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.MarkAttelerikdomainComMyApplication.ViewEditMailPanel.SomeTextInfo, "Caption", "");
-            Delay.Milliseconds(100);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='You could either use the built in crosshair behavior or use annotations. ') on item 'MarkAttelerikdomainComMyApplication.ViewEditMailPanel.SomeText'.", repo.MarkAttelerikdomainComMyApplication.ViewEditMailPanel.SomeTextInfo, new RecordItemIndex(2));
-            Validate.AttributeEqual(repo.MarkAttelerikdomainComMyApplication.ViewEditMailPanel.SomeTextInfo, "Text", "You could either use the built in crosshair behavior or use annotations. ");
-            Delay.Milliseconds(100);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LControlKey down}{Akey}{LControlKey up}{Back}' with focus on 'MarkAttelerikdomainComMyApplication.MailListPanel.input_SearchMail'.", repo.MarkAttelerikdomainComMyApplication.MailListPanel.input_SearchMailInfo, new RecordItemIndex(1));
+            repo.MarkAttelerikdomainComMyApplication.MailListPanel.input_SearchMail.PressKeys("{LControlKey down}{Akey}{LControlKey up}{Back}");
+            Delay.Milliseconds(0);
             
         }
 

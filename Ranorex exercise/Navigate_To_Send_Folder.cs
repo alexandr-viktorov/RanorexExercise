@@ -24,29 +24,29 @@ namespace Ranorex_exercise
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The CheckEmailInSendFolder recording.
+    ///The Navigate_To_Send_Folder recording.
     /// </summary>
-    [TestModule("2953d67a-7769-41a7-8158-388af813a75e", ModuleType.Recording, 1)]
-    public partial class CheckEmailInSendFolder : ITestModule
+    [TestModule("fed8798d-fdb7-457e-8700-a9f33a386133", ModuleType.Recording, 1)]
+    public partial class Navigate_To_Send_Folder : ITestModule
     {
         /// <summary>
         /// Holds an instance of the Ranorex_exerciseRepository repository.
         /// </summary>
         public static Ranorex_exerciseRepository repo = Ranorex_exerciseRepository.Instance;
 
-        static CheckEmailInSendFolder instance = new CheckEmailInSendFolder();
+        static Navigate_To_Send_Folder instance = new Navigate_To_Send_Folder();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public CheckEmailInSendFolder()
+        public Navigate_To_Send_Folder()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static CheckEmailInSendFolder Instance
+        public static Navigate_To_Send_Folder Instance
         {
             get { return instance; }
         }
@@ -79,17 +79,9 @@ namespace Ranorex_exercise
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MarkAttelerikdomainComMyApplication.MailListPanel.HowToAddPerpendicularLineInTelerik' at Center.", repo.MarkAttelerikdomainComMyApplication.MailListPanel.HowToAddPerpendicularLineInTelerikInfo, new RecordItemIndex(0));
-            repo.MarkAttelerikdomainComMyApplication.MailListPanel.HowToAddPerpendicularLineInTelerik.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MarkAttelerikdomainComMyApplication.MailPanel.treeitem_SendFolder' at 232;263.", repo.MarkAttelerikdomainComMyApplication.MailPanel.treeitem_SendFolderInfo, new RecordItemIndex(0));
+            repo.MarkAttelerikdomainComMyApplication.MailPanel.treeitem_SendFolder.Click("232;263");
             Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Caption='') on item 'MarkAttelerikdomainComMyApplication.ViewEditMailPanel.SomeText'.", repo.MarkAttelerikdomainComMyApplication.ViewEditMailPanel.SomeTextInfo, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.MarkAttelerikdomainComMyApplication.ViewEditMailPanel.SomeTextInfo, "Caption", "");
-            Delay.Milliseconds(100);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='You could either use the built in crosshair behavior or use annotations. ') on item 'MarkAttelerikdomainComMyApplication.ViewEditMailPanel.SomeText'.", repo.MarkAttelerikdomainComMyApplication.ViewEditMailPanel.SomeTextInfo, new RecordItemIndex(2));
-            Validate.AttributeEqual(repo.MarkAttelerikdomainComMyApplication.ViewEditMailPanel.SomeTextInfo, "Text", "You could either use the built in crosshair behavior or use annotations. ");
-            Delay.Milliseconds(100);
             
         }
 

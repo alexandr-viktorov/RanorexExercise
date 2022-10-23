@@ -101,11 +101,11 @@ name="Ranorex_exerciseRepository">
 				addcaps="cell,wpfcoreelement"
 				capname="cell"
 				id="66a918c2-dbd2-4981-a0b0-862189f9fccc"
-				name="HowCanIImplementFiletringBehavior"
+				name="cell_EmailSubject"
 				refimgid="e7d0d4d3-1ee4-4033-9629-912eb3ece4ab"
 				robustPath=""
 				searchtimeout="30000ms">
-					/form[@automationid='']//table[@automationid='gridView']/container[@automationid='PART_ItemsScrollViewer']/container[@automationid='PART_GridViewVirtualizingPanel']/?/list[@automationid='PART_DataCellsPresenter']/cell[@text&gt;'How can I']
+					/form[@automationid='']//table[@automationid='gridView']/?/?/?/list[@automationid='PART_DataCellsPresenter']/cell[@text&gt;$EmaillSubject]
 				</item>
 				<item
 				addcaps="cell,wpfcoreelement"
@@ -182,5 +182,10 @@ BD9joBhspFmkK9FxkFm0DfmXWSSQo8wiQBDrdI8c5xtljThGJ77RNQAAAABJRU5ErkJggg==
 		</basepath>
 	</rootfolder>
 	<variables>
+		<var
+		id="f93a521c-909a-4520-a23b-7c85ad22bf2a"
+		name="EmaillSubject">
+			How can I
+		</var>
 	</variables>
 </repository>

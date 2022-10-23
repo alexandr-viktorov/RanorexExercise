@@ -24,29 +24,29 @@ namespace Ranorex_exercise
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The CheckEmailInSendFolder recording.
+    ///The Validate_Email_Message_Content recording.
     /// </summary>
-    [TestModule("2953d67a-7769-41a7-8158-388af813a75e", ModuleType.Recording, 1)]
-    public partial class CheckEmailInSendFolder : ITestModule
+    [TestModule("e9c93f92-a3b3-4971-b73f-07aef07cba7d", ModuleType.Recording, 1)]
+    public partial class Validate_Email_Message_Content : ITestModule
     {
         /// <summary>
         /// Holds an instance of the Ranorex_exerciseRepository repository.
         /// </summary>
         public static Ranorex_exerciseRepository repo = Ranorex_exerciseRepository.Instance;
 
-        static CheckEmailInSendFolder instance = new CheckEmailInSendFolder();
+        static Validate_Email_Message_Content instance = new Validate_Email_Message_Content();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public CheckEmailInSendFolder()
+        public Validate_Email_Message_Content()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static CheckEmailInSendFolder Instance
+        public static Validate_Email_Message_Content Instance
         {
             get { return instance; }
         }
@@ -79,16 +79,8 @@ namespace Ranorex_exercise
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MarkAttelerikdomainComMyApplication.MailListPanel.HowToAddPerpendicularLineInTelerik' at Center.", repo.MarkAttelerikdomainComMyApplication.MailListPanel.HowToAddPerpendicularLineInTelerikInfo, new RecordItemIndex(0));
-            repo.MarkAttelerikdomainComMyApplication.MailListPanel.HowToAddPerpendicularLineInTelerik.Click();
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Caption='') on item 'MarkAttelerikdomainComMyApplication.ViewEditMailPanel.SomeText'.", repo.MarkAttelerikdomainComMyApplication.ViewEditMailPanel.SomeTextInfo, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.MarkAttelerikdomainComMyApplication.ViewEditMailPanel.SomeTextInfo, "Caption", "");
-            Delay.Milliseconds(100);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='You could either use the built in crosshair behavior or use annotations. ') on item 'MarkAttelerikdomainComMyApplication.ViewEditMailPanel.SomeText'.", repo.MarkAttelerikdomainComMyApplication.ViewEditMailPanel.SomeTextInfo, new RecordItemIndex(2));
-            Validate.AttributeEqual(repo.MarkAttelerikdomainComMyApplication.ViewEditMailPanel.SomeTextInfo, "Text", "You could either use the built in crosshair behavior or use annotations. ");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='In all versions of Telerik controls released in 2013 the ability to implement custom FilteringBehavior for RadAutoCompleteBox is available') on item 'MarkAttelerikdomainComMyApplication.ViewEditMailPanel.SomeText1'.", repo.MarkAttelerikdomainComMyApplication.ViewEditMailPanel.SomeText1Info, new RecordItemIndex(0));
+            Validate.AttributeEqual(repo.MarkAttelerikdomainComMyApplication.ViewEditMailPanel.SomeText1Info, "Text", "In all versions of Telerik controls released in 2013 the ability to implement custom FilteringBehavior for RadAutoCompleteBox is available");
             Delay.Milliseconds(100);
             
         }

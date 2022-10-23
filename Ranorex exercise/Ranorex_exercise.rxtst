@@ -2,20 +2,30 @@
 <testsuitedoc>
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
+			<testmodule
+			id="0de3fc6a-8c7e-45f7-9b4d-0d50332e3fde"
+			name="Navigate_To_Inbox_Folder"
+			ref="d059b543-c8e2-4be6-9f68-a9918eca1d81"
+			type="Recording">
+			</testmodule>
 			<setup
 			id="28047239-cf56-47e4-b87e-38c76cdc6728"
 			name="setup">
 			</setup>
 			<testmodule
-			id="40795690-888e-4b6c-9fbc-b2c6b264e1be"
-			name="CheckEmailInSendFolder"
-			ref="2953d67a-7769-41a7-8158-388af813a75e"
+			id="2de7f667-b0b2-4ea0-a5ba-dfb1f1f161da"
+			name="Click_Button_Send"
+			ref="a5429b83-ec66-49ab-b58d-aa4f0bf0fd35"
 			type="Recording">
 			</testmodule>
 			<testcase
 			id="5d1135fb-e92d-47f0-a830-e3112026b0bb"
-			name="TestCase">
+			name="Reply_on_Emails">
 			</testcase>
+			<smartfoldernode
+			id="6d073437-3c14-4947-b19c-e6b3d44d88c8"
+			name="Reply_On_Email">
+			</smartfoldernode>
 			<testmodule
 			id="afd9eabd-d541-4424-b5ce-b24352f50d4e"
 			name="CloseAUT"
@@ -29,6 +39,12 @@
 					variablename="CloseAutProcessIDVar">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="b3f48341-629e-4037-862f-135e66f06978"
+			name="Search_Email_By_Subject"
+			ref="9fcae4e3-c7a8-41a7-a52d-6de136ead007"
+			type="Recording">
 			</testmodule>
 			<teardown
 			id="be9058e6-6a4c-4e2e-a532-6fdd2084af24"
@@ -60,7 +76,7 @@
 			</testsuite>
 			<testmodule
 			id="d56378cc-bd7a-4171-b3bb-d2eb428e1f09"
-			name="ReplyOnMail"
+			name="Click_button_Reply"
 			ref="715a4290-40cd-46fc-be8f-f8a13835546e"
 			type="Recording">
 			</testmodule>
@@ -77,6 +93,12 @@
 					variablename="StartAutProcessIDVar">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="db5e87ef-0e10-4dd5-a82d-ef839ee9e332"
+			name="Open_Email_By_Click_On_Subject"
+			ref="87244cb1-15b2-4bdc-8bbe-5e9be14c367d"
+			type="Recording">
 			</testmodule>
 			<testcase
 			id="f87fb669-0d3f-43e2-968f-dbcea5115cd2"
@@ -99,7 +121,7 @@
 				name="Ranorex_exercise">
 					<testcase
 					id="5d1135fb-e92d-47f0-a830-e3112026b0bb"
-					name="TestCase">
+					name="Reply_on_Emails">
 						<setup
 						id="28047239-cf56-47e4-b87e-38c76cdc6728"
 						name="setup">
@@ -109,13 +131,29 @@
 							</testmodule>
 						</setup>
 						<testmodule
-						id="d56378cc-bd7a-4171-b3bb-d2eb428e1f09"
-						name="ReplyOnMail">
+						id="0de3fc6a-8c7e-45f7-9b4d-0d50332e3fde"
+						name="Navigate_To_Inbox_Folder">
 						</testmodule>
-						<testmodule
-						id="40795690-888e-4b6c-9fbc-b2c6b264e1be"
-						name="CheckEmailInSendFolder">
-						</testmodule>
+						<smartfoldernode
+						id="6d073437-3c14-4947-b19c-e6b3d44d88c8"
+						name="Reply_On_Email">
+							<testmodule
+							id="b3f48341-629e-4037-862f-135e66f06978"
+							name="Search_Email_By_Subject">
+							</testmodule>
+							<testmodule
+							id="db5e87ef-0e10-4dd5-a82d-ef839ee9e332"
+							name="Open_Email_By_Click_On_Subject">
+							</testmodule>
+							<testmodule
+							id="d56378cc-bd7a-4171-b3bb-d2eb428e1f09"
+							name="Click_button_Reply">
+							</testmodule>
+							<testmodule
+							id="2de7f667-b0b2-4ea0-a5ba-dfb1f1f161da"
+							name="Click_Button_Send">
+							</testmodule>
+						</smartfoldernode>
 						<teardown
 						id="be9058e6-6a4c-4e2e-a532-6fdd2084af24"
 						name="teardown">
@@ -137,6 +175,9 @@
 		name="TestRun">
 			<testcontainer
 			id="5d1135fb-e92d-47f0-a830-e3112026b0bb">
+			</testcontainer>
+			<testcontainer
+			id="6d073437-3c14-4947-b19c-e6b3d44d88c8">
 			</testcontainer>
 			<testcontainer
 			id="f87fb669-0d3f-43e2-968f-dbcea5115cd2">

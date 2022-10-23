@@ -49,6 +49,18 @@ namespace Ranorex_exercise
 
 #region Variables
 
+        string _EmaillSubject = "How can I";
+
+        /// <summary>
+        /// Gets or sets the value of variable EmaillSubject.
+        /// </summary>
+        [TestVariable("f93a521c-909a-4520-a23b-7c85ad22bf2a")]
+        public string EmaillSubject
+        {
+            get { return _EmaillSubject; }
+            set { _EmaillSubject = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -341,7 +353,7 @@ namespace Ranorex_exercise
         public partial class MailListPanelFolder : RepoGenBaseFolder
         {
             RepoItemInfo _input_searchmailInfo;
-            RepoItemInfo _howcaniimplementfiletringbehaviorInfo;
+            RepoItemInfo _cell_emailsubjectInfo;
             RepoItemInfo _howtoaddperpendicularlineintelerikInfo;
 
             /// <summary>
@@ -351,7 +363,7 @@ namespace Ranorex_exercise
                     base("MailListPanel", "", parentFolder, 0, null, false, "a1e8f1de-cfa6-491d-9c24-4cb1a520884e", "")
             {
                 _input_searchmailInfo = new RepoItemInfo(this, "input_SearchMail", "?/?/tabpagelist[@automationid='OutlookBar']/container[@automationid='MainSectorTemplate']/text/text[@caption='']", ".//text[@automationid='SearchWatermarkTextBox']/text[@caption='']", 30000, null, "4d370a18-c221-49da-8de6-1ec9e14e6488");
-                _howcaniimplementfiletringbehaviorInfo = new RepoItemInfo(this, "HowCanIImplementFiletringBehavior", ".//table[@automationid='gridView']/container[@automationid='PART_ItemsScrollViewer']/container[@automationid='PART_GridViewVirtualizingPanel']/?/list[@automationid='PART_DataCellsPresenter']/cell[@text>'How can I']", "", 30000, null, "66a918c2-dbd2-4981-a0b0-862189f9fccc");
+                _cell_emailsubjectInfo = new RepoItemInfo(this, "cell_EmailSubject", ".//table[@automationid='gridView']/?/?/?/list[@automationid='PART_DataCellsPresenter']/cell[@text>$EmaillSubject]", "", 30000, null, "66a918c2-dbd2-4981-a0b0-862189f9fccc");
                 _howtoaddperpendicularlineintelerikInfo = new RepoItemInfo(this, "HowToAddPerpendicularLineInTelerik", ".//table[@automationid='gridView']/container[@automationid='PART_ItemsScrollViewer']/container[@automationid='PART_GridViewVirtualizingPanel']/?/?/cell[@text>'How to Add']", "", 30000, null, "6d598557-f76d-4996-8cec-08ec9e6511ab");
             }
 
@@ -392,26 +404,26 @@ namespace Ranorex_exercise
             }
 
             /// <summary>
-            /// The HowCanIImplementFiletringBehavior item.
+            /// The cell_EmailSubject item.
             /// </summary>
             [RepositoryItem("66a918c2-dbd2-4981-a0b0-862189f9fccc")]
-            public virtual Ranorex.Cell HowCanIImplementFiletringBehavior
+            public virtual Ranorex.Cell cell_EmailSubject
             {
                 get
                 {
-                    return _howcaniimplementfiletringbehaviorInfo.CreateAdapter<Ranorex.Cell>(true);
+                    return _cell_emailsubjectInfo.CreateAdapter<Ranorex.Cell>(true);
                 }
             }
 
             /// <summary>
-            /// The HowCanIImplementFiletringBehavior item info.
+            /// The cell_EmailSubject item info.
             /// </summary>
             [RepositoryItemInfo("66a918c2-dbd2-4981-a0b0-862189f9fccc")]
-            public virtual RepoItemInfo HowCanIImplementFiletringBehaviorInfo
+            public virtual RepoItemInfo cell_EmailSubjectInfo
             {
                 get
                 {
-                    return _howcaniimplementfiletringbehaviorInfo;
+                    return _cell_emailsubjectInfo;
                 }
             }
 
