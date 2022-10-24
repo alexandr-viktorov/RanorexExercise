@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="bd025c79-8c14-4d48-8489-f04ade388445"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Click_Button_Reply"
+	namespace="Ranorex_exercise.PageModules.HomeTabPanel">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="7874dde3-f431-4b20-a6d9-8c775ae32d12"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="a2854dda-c5f0-435e-baec-83e17d6b0447"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@automationid='']//tabpage[@title='Home']/button[@name='CollapsedButton' and @text='Respond']/?/?/button[@text='Reply']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="2dbdd3c9-6e24-4d10-bd3d-1fd27a029574"
+	name="Ranorex_exerciseRepository"
+	relativepath="..\..\Ranorex_exerciseRepository.rxrep">
+		<codegen
+		classname="Ranorex_exerciseRepository"
+		namespace="Ranorex_exercise">
+		</codegen>
+		<rootfolder
+		id="6a3ff6d0-3c9c-4c5a-9f3e-8bdfe058f992"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Click_Button_Reply.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

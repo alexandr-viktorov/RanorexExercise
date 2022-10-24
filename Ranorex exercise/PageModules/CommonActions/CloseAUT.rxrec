@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="9d3a7a06-d746-4e4f-ad87-59ae3ae16041"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="Ranorex_exercise.PageModules.CommonActions">
+	</codegen>
+	<variables>
+		<var
+		id="319a82fa-5e7a-41ad-943d-6cb7033ae0f5"
+		name="CloseAutProcessIDVar">
+			-1
+		</var>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="500ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="44c2b1c1-d59f-438c-804e-78e7c673f9c0">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="ProcessID"
+				variable="CloseAutProcessIDVar">
+				</binding>
+			</bindings>
+			<info
+			id="d4a9e1a4-201f-4ee0-b861-7125b6ef7b1d"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@automationid='']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="2dbdd3c9-6e24-4d10-bd3d-1fd27a029574"
+	name="Ranorex_exerciseRepository"
+	relativepath="..\..\Ranorex_exerciseRepository.rxrep">
+		<codegen
+		classname="Ranorex_exerciseRepository"
+		namespace="Ranorex_exercise">
+		</codegen>
+		<rootfolder
+		id="6a3ff6d0-3c9c-4c5a-9f3e-8bdfe058f992"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

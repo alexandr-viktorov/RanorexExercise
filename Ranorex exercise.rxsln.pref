@@ -9,9 +9,11 @@
       <string>{02339938-F1A7-4C0B-BC91-360B35C4C8A7}</string>
       <string>6e12a760-6636-488c-b3e9-7d256aa61ae5</string>
       <string>60513a05-eab7-41e7-8c10-e51c735edc2e</string>
+      <string>f7c0233e-8695-4f48-b2d9-2eebea8f018a</string>
       <string>2953d67a-7769-41a7-8158-388af813a75e</string>
+      <string>7de4455a-c487-4b88-8dff-c9b0636c1d23</string>
     </ArrayOfString>
   </SerializedValue>
-  <ProjectBrowserState value="[Solution Ranorex exercise[Ranorex exercise[Ranorex_exerciseRepository.rxrep[]]]]&#xD;&#xA;Solution Ranorex exercise\Ranorex exercise\Ranorex_exercise.rxtst&#xD;&#xA;Solution Ranorex exercise\Solution Items" />
+  <ProjectBrowserState value="[Solution Ranorex exercise[Solution Items[]Ranorex exercise[PageModules[CommonActions[]ViewEditMailPanel[]]]]]&#xD;&#xA;Solution Ranorex exercise\Ranorex exercise\Ranorex_exercise.rxtst&#xD;&#xA;Solution Ranorex exercise\Ranorex exercise\PageModules" />
   <StartupProject value="{02339938-F1A7-4C0B-BC91-360B35C4C8A7}" />
 </Properties>
